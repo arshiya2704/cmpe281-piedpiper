@@ -22,3 +22,8 @@ Ashish:-
 - Edited functional and non-functional requirements.
 - Added user stories for Browse the menu, Item addition to the cart and Security.
 
+
+Nikits:-
+- Defined user stories for few modules of our application namely modification of order placed , order confirmation and paying for the same.
+- Edited one of the non-functional requirments i.e. how should our application persom ideally. 
+- Updated XP core value - courage
