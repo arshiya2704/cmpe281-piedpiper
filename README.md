@@ -13,3 +13,9 @@ Arshiya:-
 - Added user stories for Registration, Login and Scalability.
 - Updated the core value- Respect.
 - Updated the CFD for changes in the second week.
+
+Manogna:-
+- Participated in the review meetings to finalize functional and non-functional requirements.
+- Uploaded the user stories for Usability, Logout and Account Deactivation.
+- Updated XP Core value - Communication.
+- Added Minutes of Meeting for the second week.
