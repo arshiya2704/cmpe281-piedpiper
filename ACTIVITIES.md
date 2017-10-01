@@ -16,3 +16,8 @@ Manogna:-
 - Uploaded the user stories for Usability, Logout and Account Deactivation.
 - Updated XP Core value - Communication.
 - Added Minutes of Meeting for the second week.
+
+Ashish:-
+- Edited functional and non-functional requirements.
+- Added user stories for Browse the menu, Item addition to the cart and Security.
+
