@@ -21,6 +21,7 @@ Manogna:-
 Ashish:-
 - Edited functional and non-functional requirements.
 - Added user stories for Browse the menu, Item addition to the cart and Security.
+- Updated XP core value - Feedback
 
 
 Nikita:-
