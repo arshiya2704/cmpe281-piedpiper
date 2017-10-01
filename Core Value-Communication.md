@@ -1,3 +1,5 @@
+#Communication
+
 Extreme Programming(XP) acknowledged Communication as one of the important core values because of the role it plays in the 
 Project success.The more we communicate, the clearer we can see exactly what needs to be done, and also gain more confidence 
 about what really need not be done. This helps the team to come to an agreement on any of the important decisions we may make.
