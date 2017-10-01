@@ -5,5 +5,5 @@ A web based shopping cart utility application that allows multiple customers to 
 
 ### Week 2 Updates:
 Jigar:-
-- Added user stories for group fromation, reliability and manageability.
+- Added user stories for group formation, reliability and manageability.
 - Updated XP core value-Simplicity
