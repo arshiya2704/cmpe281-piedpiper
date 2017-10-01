@@ -1,1 +1,3 @@
-
+- We will stick to our commitment and we will deliver our software early. 
+- So that on regular basis, we can demonstrate our software early for changes needed in our product. 
+- Frequently taking valuable feedback will be most helpful in making improvements and changes to reach to the final product.
