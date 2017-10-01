@@ -4,6 +4,7 @@
 Jigar:-
 - Added user stories for group formation, reliability and manageability.
 - Updated XP core value-Simplicity
+- Edited non-fuctional requirement
 
 Arshiya:-
 - Listed down the functional requirements
