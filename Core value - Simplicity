@@ -1,1 +1,16 @@
+Simple solutions are cheaper and quicker to implement than complex solutions. Therefore, XP always tries to find the simplest
+solutions. We will follow the following principles: "Do the simplest thing that could possibly work" (DTSTTCPW) principle.Elsewhere
+known as KISS (“Keep It Simple, Stupid!”). A coach may say DTSTTCPW when he sees an XP developer doing something needlessly
+complicated. Also, YAGNI principle (''You ain’t gonna need it''), keep it to the point of interest. Simplicity and communication
+support each other.
 
+To be fair, this Value is a useful one, in the sense that it makes the programmer slam on the brakes before they write something
+they don't need to. It's common sense to keep everything as simple as possible, i.e. never over-engineer. A common example is to
+produce a "framework" due to some unknown, hypothetical future requirement. If the requirement isn't there now, don't code for it.
+
+We will do what is needed and asked for, but no more. This will maximize the value created for the investment made to date. We will
+take small simple steps to our goal and mitigate failures as they happen. We will create something we are proud of and maintain it
+long term for reasonable costs.
+
+During week one, Project team has shown simplicity in bringing new ideas to the project. The team came with an idea of gathering
+user stories which can define our functional and non-functional requirement.
