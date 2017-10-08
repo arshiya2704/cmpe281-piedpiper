@@ -27,3 +27,11 @@ We give this principle the utmost importance. We listen patiently to the observa
 ### 6. Don't take things personally
 
 It's frustrating if we give our opinion and it's overheard or not appreciated. But our goal in sharing isn’t necessarily to have people follow our way of thinking. It’s to speak truthfully and tactfully, with the constant goal of bettering the organization and the lives of the people you serve, which brings us to our last point. So, we listen to each others' ideas properly and then decide with mutual consent on each decision to be taken with majority.
+
+As we are in the third week of the project, we have implemented all the above points to maintain respect for each other in our team. Also we have come across some other things with the time passing that we keep in mind to maintain the peaceful environment of our team which are as follows:
+
+### 7. We treat people with courtesy, politeness, and kindness.
+
+### 8. Encourage team members to express opinions and ideas.
+
+### 9. Listen to what others have to say before expressing your viewpoint. Never speak over, butt in, or cut off another person.
