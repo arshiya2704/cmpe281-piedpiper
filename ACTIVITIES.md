@@ -1,5 +1,13 @@
 # BonAppétit
 
+### Week 3 Updates:
+
+Ashish:
+- Completed research for which database to use and decided to use Riak.
+- Major reason to go with Riak : It is an open-source distributed, decentralized Key-Value data Store which provides high     availability, fault tolerance, operational simplicity and scalability. Riak also  provides Partition-tolerance.
+- Created a simple demo document to Learn how to connect with Riak client using NodeJS Client.
+
+
 ### Week 2 Updates:
 Jigar:-
 - Added user stories for group formation, reliability and manageability.
