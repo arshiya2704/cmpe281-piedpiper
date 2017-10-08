@@ -31,6 +31,13 @@ Nikita:-
 - Learnt how to create database and tried my hand at a few queries.
 - Updated the weekly minutes of meeting for this week. 
 
+Manogna:-
+- Researched about the various NOSQL databases available and finalized MongoDB.
+- As MongoDB provides all the capabilities needed to meet the most complex requirements at any scale, I have decided implement MongoDB for this project.
+- Learnt the basics of MongoDB and created a sample database with collection of few documents and ran a few queries to retrieve the specified data.
+- As a next step, I also performed some trials to connect MongoDB to a sample source code in Golang to which NodeJS is connected.
+- Updated the core value (i.e., Communication)assigned to me in GitHub.
+
 ### Week 2 Updates:
 Jigar:-
 - Added user stories for group formation, reliability and manageability.
@@ -59,3 +66,4 @@ Nikita:-
 - Defined user stories for few modules of our application namely modification of order placed , order confirmation and paying for the same.
 - Edited one of the non-functional requirments i.e. how should our application persom ideally. 
 - Updated XP core value - courage
+
