@@ -5,7 +5,7 @@ This page is about Weekly Meetings.
    * While Arshiya, Ashish and Jigar chose to proceed with Riak, Manogna and Nikita finalised on MongoDB .
    * All the team members researched and explored their respective NoSQL databases . 
    * The team members got familiarised with database creation , creation of collection, table, and executing queries on the databases of      their choice.
-   * Team members discussed on how some of the functional requirements can be modifies to make our project outcome better . 
+   * Team members discussed on how some of the functional requirements can be modified to make our project outcome better . 
  ## Next Week To-Do :
    * Team members will learn how to connect the NoSQL database with their individual AWS account and learn deploying it using docker          clouds.
    
