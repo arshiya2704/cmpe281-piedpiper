@@ -1,6 +1,6 @@
 This page is about Weekly Meetings.
 # Week  - 3:
-## 09-06-2017
+## 10-06-2017
    * As decided in last week , the team members finalised the NoSQL database that they would prefer to work on . 
    * While Arshiya, Ashish and Jigar chose to proceed with Riak, Manogna and Nikita finalised on MongoDB .
    * All the team members researched and explored their respective NoSQL databases . 
