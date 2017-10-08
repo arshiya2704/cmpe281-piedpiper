@@ -7,6 +7,19 @@ Jigar:-
 - Got started with Riak on local machine
 - Updated the CFD for changes in the third week
 
+Arshiya:-
+- Updated the XP core value- Respect.
+- As a task for this week, reasearched upon various NoSQL databases and decided to move ahead with Riak.
+- Reasons for choosing this NoSQL database: 
+
+  . It provides high availability, fault tolerance, operational simplicity, and scalability.
+  
+  . In addition to the open-source version, it comes in a supported enterprise version and a cloud storage version.
+  
+  . It has fault tolerance data replication and automatic data distribution across the cluster for performance and resilience.
+  
+- Learnt how to create database and hands on few queries.
+
 Ashish:-
 - Completed research for which database to use and decided to use Riak.
 - Major reasons to go with Riak : It is an open-source distributed, decentralized Key-Value data Store which provides high     availability, fault tolerance, operational simplicity and scalability. Riak also  provides Partition-tolerance.
