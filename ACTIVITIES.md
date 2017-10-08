@@ -7,6 +7,11 @@ Ashish:-
 - Major reasons to go with Riak : It is an open-source distributed, decentralized Key-Value data Store which provides high     availability, fault tolerance, operational simplicity and scalability. Riak also  provides Partition-tolerance.
 - Created a simple demo document to Learn how to connect with Riak client using NodeJS Client.
 
+Nikita:-
+- Finalised on MongoDB as my choice of NoSQL database .
+- I chose MongoDB since it enables to build applications faster, can handle diversified data types and is highly scalable database.
+- Learnt how to create database and tried my hand at a few queries.
+- Updated the weekly minutes of meeting for this week. 
 
 ### Week 2 Updates:
 Jigar:-
