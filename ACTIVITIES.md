@@ -1,6 +1,11 @@
 # BonAppétit
 
 ### Week 3 Updates:
+Jigar:-
+- Moved ahead in search of NoSQL database
+- Selected Riak because of uniform data distribution, predictable performance, high avialability and failure recovery
+- Got started with Riak on local machine
+- Updated the CFD for changes in the third week
 
 Ashish:-
 - Completed research for which database to use and decided to use Riak.
