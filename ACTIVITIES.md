@@ -1,6 +1,13 @@
 # BonAppétit
 
 ### Week 4 Updates:
+Arshiya:-
+- Initialised to deploy riak on docker as well as locally but faced many issues due to the improper documentation available about it, so decided to switch to MongoDB.
+- Installed MongoDB locally on my machine and created a database named users.
+- Created a simple node server and using mongoose, i connected to my db users, created a schema and a model as well named "UserData" which in turn inserted a collection named "Userdata" in the db and represents the value that i enter through the node server.
+- Updated the XP core value- Respect.
+- Added some issues pertaining MongoDB.
+
 Ashish:-
 
 - Started working with Riak and faced some issues, so decided to go with second option which is MongoDB.
