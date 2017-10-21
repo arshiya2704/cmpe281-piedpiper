@@ -35,3 +35,7 @@ As we are in the third week of the project, we have implemented all the above po
 ### 8. Encourage team members to express opinions and ideas.
 
 ### 9. Listen to what others have to say before expressing your viewpoint. Never speak over, butt in, or cut off another person.
+
+### 10. Use people’s ideas to change or improve work. Let employees know you used their idea, or, better yet, encourage the person with the idea to implement the idea.
+
+### 11. Never insult people, name call, disparage or put down people or their ideas.
