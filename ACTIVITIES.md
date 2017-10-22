@@ -30,6 +30,8 @@ Ashish:-
 - Started working with Riak and faced some issues, so decided to go with second option which is MongoDB.
 - Installed MongoDB locally and created a simple database named cart. This cart database has collection named items. Inserted   various items in this collection as documents.
 - Created a simple Node server. This server connects to local MongoDB database cart and prints every item which is represented   by documents in item collection.  
+- Updated CFD for forth week.
+- Updated XP core value - Feedback.
 
 Manogna:-
 - Done few trials using Mongodb and sample go api given by the professor.
