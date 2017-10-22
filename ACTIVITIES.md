@@ -9,6 +9,7 @@ Nikita:-
 - Practised demo progarams provided by professor on connecting an appliaction written in goapi and nodejs with MongoDb image pulled .
 - Also practised how to deploy the same application. 
 - The issues I faced while doing this helped me get a clearer idea of MongoDb , its usage with docker and nodejs. 
+- Updated xp core values, courage maintained by team members this week.
 
 Jigar:-
 - Ran riak container and created database and buckets, however was not able to connect with node backend
