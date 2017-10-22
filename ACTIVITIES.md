@@ -21,6 +21,12 @@ Ashish:-
 - Installed MongoDB locally and created a simple database named cart. This cart database has collection named items. Inserted   various items in this collection as documents.
 - Created a simple Node server. This server connects to local MongoDB database cart and prints every item which is represented   by documents in item collection.  
 
+Manogna:-
+- Done few trials using Mongodb and sample go api given by the professor.
+- Deployed Mongodb into Docker and started the container. Connected the running instance to go api on localhost and tested whether the server is up and able to retrieve the mongodb documents.
+- Also ran go api on docker and connected it to nodejs. Tested whether the mongodb is responding to the frontend requests happening through nodejs.
+- Updated the core value- Communication.
+
 ### Week 3 Updates:
 Jigar:-
 - Moved ahead in search of NoSQL database
