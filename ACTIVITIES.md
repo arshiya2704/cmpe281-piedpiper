@@ -1,6 +1,15 @@
 # BonAppétit
 
 ### Week 4 Updates:
+Nikita:-
+- Installed MongoDb in my local machine and learnt the commands of MongoDb like creating database, collection, inserting data, queryig     data.
+- Pulled image of MongoDb from docker hub and learnt how to utilise it similarly as that installed locally in my machine.
+- Since the team has finalised on using nodejs for the backend development, learnt how to establish connection from nodejs to my MongoDb 
+  database.
+- Practised demo progarams provided by professor on connecting an appliaction written in goapi and nodejs with MongoDb image pulled .
+- Also practised how to deploy the same application. 
+- The issues I faced while doing this helped me get a clearer idea of MongoDb , its usage with docker and nodejs. 
+
 Jigar:-
 - Ran riak container and created database and buckets, however was not able to connect with node backend
 - Switched to MongoDB database
