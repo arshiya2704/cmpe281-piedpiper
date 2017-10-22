@@ -16,3 +16,5 @@ benefitted. And everyone has been vocal about their opinions too, which thereby 
 in the best way possible.
 
 On a positive note, the team members continued to maintain effective communication in the third week as well. They have been exchanging individual updates from time to time throughout the week. Upon the decision made about the database selection that 3 people will do on Riak and the other two will do on MongoDB, each sub group working on same database met once, before the whole team met for weekly meetings, And the team members have collaboratively decided to learn and experiment with their respective databases this week.
+
+The fourth week has gone with all the technical discussios among the team members. There is a mutual help within the team related to the technical aspects and this can be considered a positie sign of team's unity. Members were vocal about the areas/issues they are facing with respect to the project and mutual help was derived out of it. With the actual implementaion of the project getting started next week, I expect the similar levels of communication to be exhibited in the upcoming weeks as well.
