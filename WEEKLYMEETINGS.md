@@ -1,5 +1,17 @@
 This page is about Weekly Meetings.
-# Week  - 3:
+# Week - 4: 
+## 10-19-2017
+  * As per discussion after the last weeek, the team members tried implementing their respective NoSQL databases using docker.
+  * They tried pulling images of database(MongoDb and Riak) , and tried conterisation of the same.
+  * Ashish , Arshiya and Jigar faced difficulties using Riak and hence decided to shift to MongoDb.
+  * Manogna and Nikita practiced some demo on using MongoDb with docker .
+  * Team members have decided to use nodejs to implement yhe functional requirements and build the necessary APIs.
+  * Team members also studied about Nodejs and how it works.
+## Next week To-Do:
+  * The team members will start the development of the project.
+  * More focus will be given on GO Programming.
+  
+  # Week  - 3:
 ## 10-06-2017
    * As decided in last week , the team members finalised the NoSQL database that they would prefer to work on . 
    * While Arshiya, Ashish and Jigar chose to proceed with Riak, Manogna and Nikita finalised on MongoDB .
