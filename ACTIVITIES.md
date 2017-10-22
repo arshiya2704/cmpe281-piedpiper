@@ -1,6 +1,13 @@
 # BonAppétit
 
 ### Week 4 Updates:
+Jigar:-
+- Ran riak container and created database and buckets, however was not able to connect with node backend
+- Switched to MongoDB database
+- Installed locally and creared cart database, collections and documents
+- Connected with Node Server
+- Updated XP core value - Simplicity
+
 Arshiya:-
 - Initialised to deploy riak on docker as well as locally but faced many issues due to the improper documentation available about it, so decided to switch to MongoDB.
 - Installed MongoDB locally on my machine and created a database named users.
