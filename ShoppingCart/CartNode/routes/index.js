@@ -2,7 +2,7 @@ var ejs = require("ejs");
 
 var mongo = require('mongodb');
 var monk = require('monk');
-var db = monk('localhost:27017/cmpe281');
+var db = monk('mongodb:27017/cmpe281');
 
 function showIndex(req,res) {
 
