@@ -39,3 +39,9 @@ As we are in the third week of the project, we have implemented all the above po
 ### 10. Use people’s ideas to change or improve work. Let employees know you used their idea, or, better yet, encourage the person with the idea to implement the idea.
 
 ### 11. Never insult people, name call, disparage or put down people or their ideas.
+
+In addition to above keypoints, we also keep in mind the following things:
+
+### 12. Do not nit-pick, constantly criticize over little things, belittle, judge, demean or patronize. A series of seemingly trivial actions, added up over time, constitutes bullying.
+
+### 13. Treat people the same no matter their race, religion, gender, size, age, or country of origin. Implement policies and procedures consistently so people feel that they are treated fairly and equally. Treating people differently can constitute harassment or a hostile work environment.
