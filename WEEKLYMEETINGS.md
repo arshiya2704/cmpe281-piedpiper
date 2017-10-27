@@ -1,4 +1,16 @@
 This page is about Weekly Meetings.
+
+# Week - 5: 
+## 10-27-2017
+  * On the basis of last discussion, everyone has implemented their NoSQL database on docker 
+  * We have decided different modules to work on and each team member has selected individual modules as follows
+  * Nikita and Ashish have decided to work on User Sessions and Shopping cart respectively
+  * Arshiya, Manogna and Jigar will work on Payment, Product Catalog and User Groups
+  * All team members have selected NodeJs as backend services
+## Next week To-Do:
+  * All the team member will deploy their linked containers into Amazon ECR
+  * Team will put some efforts on basic UI of application web pages and bring forth new ideas in that domain
+
 # Week - 4: 
 ## 10-19-2017
   * As per discussion after the last weeek, the team members tried implementing their respective NoSQL databases using docker.
