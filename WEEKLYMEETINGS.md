@@ -1,6 +1,7 @@
 This page is about Weekly Meetings.
 
 # Week - 5: 
+## This week's Progress:
 ## 10-27-2017
   * On the basis of last discussion, everyone has implemented their NoSQL database on docker 
   * We have decided different modules to work on and each team member has selected individual modules as follows
