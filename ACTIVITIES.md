@@ -1,4 +1,11 @@
 # BonAppétit
+### Week 5 Updates:
+Jigar:-
+- Created MongoDb container
+- Created Nodejs container and linked it to mongo container
+- Selected User Groups module and created database for this module
+- Updated XP core value - Simplicity
+- Updated WeeklyMeeting page added progress of team for the last week
 
 ### Week 4 Updates:
 Nikita:-
