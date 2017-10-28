@@ -16,6 +16,14 @@ Arshiya:-
 - Updated other charts in CFD as well
 - Created initial Sequence diagram for the application
 
+Manogna:-
+- Created User stories with BDD scenarios.
+- Designed Class Diagram for Product Catalog module.
+- Started coding to list and find product functionalities.
+- Updated XP COre value - Communication
+- Created product database in mongodb
+
+
 ### Week 4 Updates:
 Nikita:-
 - Installed MongoDb in my local machine and learnt the commands of MongoDb like creating database, collection, inserting data, queryig     data.
