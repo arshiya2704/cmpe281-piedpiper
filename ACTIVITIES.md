@@ -23,6 +23,14 @@ Manogna:-
 - Updated XP COre value - Communication
 - Created product database in mongodb
 
+Nikita:-
+- Created class diagram for the login and registration module.
+- Created Activity diagram for the entire project shhowing the functions that user can perform.
+- Created MingoDb database and collection.
+- Started coding for the login registration module, created the connection with mongoDB .
+- Created monodb container.
+- Updated XP core value - Courage.
+- Updated the CFD for this week. 
 
 ### Week 4 Updates:
 Nikita:-
