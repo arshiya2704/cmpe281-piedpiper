@@ -1,5 +1,13 @@
 # BonAppétit
 ### Week 5 Updates:
+Ashish:-
+- Dockerised existing NodeJS and MongoDB and linked them to work together
+- Deployed NodeJS server on AWS ECS
+- As my module is Shopping Cart, finalized flow of how Shopping Cart will interect with other modules
+- Updated XP Core value Feedback
+- Created initial Class Diagram for application
+- Created initial Use Case Diagram for application
+
 Jigar:-
 - Created MongoDb container
 - Created Nodejs container and linked it to mongo container
