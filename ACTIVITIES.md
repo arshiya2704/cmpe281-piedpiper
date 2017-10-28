@@ -7,6 +7,15 @@ Jigar:-
 - Updated XP core value - Simplicity
 - Updated WeeklyMeeting page added progress of team for the last week
 
+Arshiya:-
+- Created MongoDb container
+- Created Nodejs container and linked it to mongo container
+- Created node application to link it to MongoDb via Mongoose library
+- Updated XP core value - Respect
+- Updated Burntdown Chart
+- Updated other charts in CFD as well
+- Created initial Sequence diagram for the application
+
 ### Week 4 Updates:
 Nikita:-
 - Installed MongoDb in my local machine and learnt the commands of MongoDb like creating database, collection, inserting data, queryig     data.
