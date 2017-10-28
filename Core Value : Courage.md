@@ -1,5 +1,10 @@
 ## Courage XP core value
 Courage being the part of one of core values of XP which focuses on amplifying the positive aspects of traditional programming models so they work to their maximum potential.
+### Week 5 of project
+1. Courage literally came into play from this week since the real challenge began .
+2. What we team memebers decided and discussed over the last four weeks, we have begun the process of implementing it.
+3. Though the team members faced some initial conflict in opinion over how to implemet their modules, design database structures but we      made it a point to talk and solve it.
+4. The team members are pretty sure that if we all work diligently and courageously , we can complete this in time meeting the standards      expected.
 
   ### Week 3 and 4 of project
 1. As promised, we are striving towards achieving our goal without taking help of any unfair means.
