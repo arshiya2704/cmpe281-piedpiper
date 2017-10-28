@@ -1,20 +1,20 @@
 """
     Base Configuration File
 """
-""" Put Generic Configurations here """
+""" Generic Configurations """
 class Config(object):
     DEBUG = False
     TESTING = False
     SECRET_KEY = 'someSecretKey'
 
-""" Put Development Specific Configurations here """
+""" Development Specific Configurations """
 class DevelopmentConfig(Config):
     DEBUG = True
 
-""" Put Staging Specific Configurations here """
+""" Staging Specific Configurations """
 class StagingConfig(Config):
     TESTING = True
 
-""" Put Production Specific Configurations here """
+""" Production Specific Configurations """
 class ProductionConfig(Config):
     pass
