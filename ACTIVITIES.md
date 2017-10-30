@@ -1,4 +1,44 @@
 # BonAppétit
+### Week 5 Updates:
+Ashish:-
+- Dockerised existing NodeJS and MongoDB and linked them to work together
+- Deployed NodeJS server on AWS ECS
+- As my module is Shopping Cart, finalized flow of how Shopping Cart will interect with other modules
+- Updated XP Core value Feedback
+- Created initial Class Diagram for application
+- Created initial Use Case Diagram for application
+
+Jigar:-
+- Created MongoDb container
+- Created Nodejs container and linked it to mongo container
+- Selected User Groups module and created database for this module
+- Updated XP core value - Simplicity
+- Updated WeeklyMeeting page added progress of team for the last week
+
+Arshiya:-
+- Created MongoDb container
+- Created Nodejs container and linked it to mongo container
+- Created node application to link it to MongoDb via Mongoose library
+- Updated XP core value - Respect
+- Updated Burntdown Chart
+- Updated other charts in CFD as well
+- Created initial Sequence diagram for the application
+
+Manogna:-
+- Created User stories with BDD scenarios.
+- Designed Class Diagram for Product Catalog module.
+- Started coding to list and find product functionalities.
+- Updated XP COre value - Communication
+- Created product database in mongodb
+
+Nikita:-
+- Created class diagram for the login and registration module.
+- Created Activity diagram for the entire project shhowing the functions that user can perform.
+- Created MingoDb database and collection.
+- Started coding for the login registration module, created the connection with mongoDB .
+- Created monodb container.
+- Updated XP core value - Courage.
+- Updated the CFD for this week. 
 
 ### Week 4 Updates:
 Nikita:-

@@ -1,4 +1,7 @@
-https://docs.google.com/spreadsheets/d/1H7QNNWDr-AUeqDAmXsha8MVdV_wkPZnCmPNKcY_wV20/edit#gid=1568396328
+https://drive.google.com/open?id=1gx6bVj8WGGSVawP3lAQmBy7omzKJ9EC6z11tDnl1NxM
+
+-Added different charts like WIP, Average Lead time, WIP and Average Lead time, Throughput for CFD
+-Updated on 27th October, 2017
 
 -Updated on 21st October,2017
 
