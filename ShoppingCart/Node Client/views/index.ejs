@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ashish</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+      <%
+      var items = items;
+      var items2=items2;
+      %>
+    <% for (p in items) { %>
+     
+        <h1>
+          ItemId : <%= items[p].itemId  %> <br/>
+          Price :<%= items[p].price  %> <br/>
+          Quantity :<%= items[p].quantity  %> <br/>
+          Name :<%= items[p].name  %> <br/>
+          CartId :<%= items[p].cartId  %> <br/>
+        </h1>
+        <h1><%= items2[0].price %></h1>
+    <% } %>
+    
+  </body>
+</html>
