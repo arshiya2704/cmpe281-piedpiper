@@ -4,12 +4,9 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-//	"encoding/json"
 	"github.com/codegangsta/negroni"
-//	"github.com/streadway/amqp"
 	"github.com/gorilla/mux"
 	"github.com/unrolled/render"
-//	"github.com/satori/go.uuid"
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 )
