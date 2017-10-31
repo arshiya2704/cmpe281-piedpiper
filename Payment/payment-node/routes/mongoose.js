@@ -13,7 +13,7 @@ var userDataSchema = new Schema({
     shippingAddr    : String
 });
 
-//userDataSchema.plugin(passportLocalMongoose);
+//userDataSchema.plugin(passportLocalMongoose);;;
 
 module.exports.PaymentData = mongoose.model('PaymentData', userDataSchema);
 
