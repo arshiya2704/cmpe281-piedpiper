@@ -82,3 +82,131 @@ func productsHandler(formatter *render.Render) http.HandlerFunc {
 		formatter.JSON(w, http.StatusOK, result)
 	}
 }
+
+// API Create New Order
+func newOrderHandler(formatter *render.Render) http.HandlerFunc {
+	return func(w http.ResponseWriter, req *http.Request) {
+		uuid := uuid.NewV4()
+		var ord = order {
+			Id: uuid.String(),
+			OrderStatus: "Order Placed",
+		}
+		if orders == nil {
+			orders = make(map[string]order)
+		}
+		orders[uuid.String()] = ord
+		queue_send(uuid.String())
+		fmt.Println( "Orders: ", orders )
+		formatter.JSON(w, http.StatusOK, ord)
+	}
+}
+
+
+// API Get Order Status
+func orderStatusHandler(formatter *render.Render) http.HandlerFunc {
+	return func(w http.ResponseWriter, req *http.Request) {
+		params := mux.Vars(req)
+		var uuid string = params["id"]
+		fmt.Println( "Order ID: ", uuid )
+		if uuid == ""  {
+			fmt.Println( "Orders:", orders )
+			var orders_array [] order
+			for key, value := range orders {
+				fmt.Println("Key:", key, "Value:", value)
+				orders_array = append(orders_array, value)
+			}
+			formatter.JSON(w, http.StatusOK, orders_array)
+		} else {
+			var ord = orders[uuid]
+			fmt.Println( "Order: ", ord )
+			formatter.JSON(w, http.StatusOK, ord)
+		}
+	}
+}
+
+// Send Order to Queue for Processing
+func queue_send(message string) {
+	conn, err := amqp.Dial("amqp://"+rabbitmq_user+":"+rabbitmq_pass+"@"+rabbitmq_server+":"+rabbitmq_port+"/")
+	failOnError(err, "Failed to connect to RabbitMQ")
+	defer conn.Close()
+
+	ch, err := conn.Channel()
+	failOnError(err, "Failed to open a channel")
+	defer ch.Close()
+
+	q, err := ch.QueueDeclare(
+		rabbitmq_queue, // name
+		false,   // durable
+		false,   // delete when unused
+		false,   // exclusive
+		false,   // no-wait
+		nil,     // arguments
+	)
+	failOnError(err, "Failed to declare a queue")
+
+	body := message
+	err = ch.Publish(
+		"",     // exchange
+		q.Name, // routing key
+		false,  // mandatory
+		false,  // immediate
+		amqp.Publishing{
+			ContentType: "text/plain",
+			Body:        []byte(body),
+		})
+	log.Printf(" [x] Sent %s", body)
+	failOnError(err, "Failed to publish a message")
+}
+
+// Receive Order from Queue to Process
+func queue_receive() []string {
+	conn, err := amqp.Dial("amqp://"+rabbitmq_user+":"+rabbitmq_pass+"@"+rabbitmq_server+":"+rabbitmq_port+"/")
+	failOnError(err, "Failed to connect to RabbitMQ")
+	defer conn.Close()
+
+	ch, err := conn.Channel()
+	failOnError(err, "Failed to open a channel")
+	defer ch.Close()
+
+	q, err := ch.QueueDeclare(
+		rabbitmq_queue, // name
+		false,   // durable
+		false,   // delete when usused
+		false,   // exclusive
+		false,   // no-wait
+		nil,     // arguments
+	)
+	failOnError(err, "Failed to declare a queue")
+
+	msgs, err := ch.Consume(
+		q.Name, // queue
+		"orders",     // consumer
+		true,   // auto-ack
+		false,  // exclusive
+		false,  // no-local
+		false,  // no-wait
+		nil,    // args
+	)
+	failOnError(err, "Failed to register a consumer")
+
+	order_ids := make(chan string)
+	go func() {
+		for d := range msgs {
+			log.Printf("Received a message: %s", d.Body)
+			order_ids <- string(d.Body)
+		}
+		close(order_ids)
+	}()
+
+	err = ch.Cancel("orders", false)
+	if err != nil {
+		log.Fatalf("basic.cancel: %v", err)
+	}
+
+	var order_ids_array []string
+	for n := range order_ids {
+		order_ids_array = append(order_ids_array, n)
+	}
+
+	return order_ids_array
+}
