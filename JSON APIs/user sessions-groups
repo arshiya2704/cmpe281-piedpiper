@@ -1,0 +1,16 @@
+Make a group of users:
+{
+  req_id: 123123
+  users:[
+    user_id:1,
+    user_id:2
+  ]
+  name:"group_name"
+}
+
+Return created group:
+{
+  req_id: 123123,
+  group_id:1212,
+  created_at:"timestamp_value"
+}
