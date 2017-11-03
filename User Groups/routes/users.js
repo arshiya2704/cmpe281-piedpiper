@@ -2,6 +2,7 @@ var express = require('express');
 var mongo = require("./mongo")
 var mongoURL = "mongodb://localhost:27017/bonappetit";
 var router = express.Router();
+var
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
@@ -11,11 +12,12 @@ router.get('/', function(req, res, next) {
 router.post('/creategroup', function(req, res) {
     try{
         mongo.connect(mongoURL, function(){
-            var coll = mongo.connect('groups')
+            var coll = mongo.collection('groups')
+
             var groupObj = {}
             groupObj.users = req.body.users;
             groupObj.name = req.body.name;
-            groupObj.timestamp = {$type:"timestamp"}
+            //groupObj.timestamp = {$type:"timestamp"}
             coll.insertOne(groupObj, function(err, result) {
                 if (err) {
                     res.status(400).json({
@@ -49,8 +51,8 @@ router.post('/creategroup', function(req, res) {
     }
 });
 
-//
-// router.post('/getmembers', function(req,resp){
+
+router.post('/getmembers', function(req,resp){
 //     if(req.session && req.session.user){
 //         var showMembers = "select owner_id, permission from user_group where group_id ='"+req.body.groupId+"'";
 //         mysql.fetchData(function(err, res){
@@ -74,7 +76,7 @@ router.post('/creategroup', function(req, res) {
 //     else{
 //         resp.status(401).json({message:"session not working"});
 //     }
-// });
+});
 //
 // //delete group member
 // router.post('/delmember', function(req, res){
