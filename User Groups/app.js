@@ -54,44 +54,4 @@ app.use(passport.initialize());
 app.use('/', routes);
 app.use('/users', users);
 
-// app.post('/signup', function(req, res) {
-//     kafka.make_request('signup_topic', {"operation":"signup","username":req.body.username, "password":req.body.password, "email":req.body.email, "phone":req.body.phone}, function(err, results){
-//         if (results.code == 200) {
-//             //done(null, results.user);
-//             console.log(results);
-//             var ob = results.user;
-//             ob.stat = "logged in";
-//             res.status(201).json(ob);
-//         }
-//         else {
-//             res.status(400).send();
-//         }
-//     })
-// });
-
-
-// app.post('/login', function(req, res) {
-//     console.log('sess:', req.session.user);
-//     passport.authenticate('login', function(err, user) {
-//         if(err) {
-//             res.status(500).send();
-//         }
-//
-//         if(!user) {
-//             res.status(401).send();
-//         }
-//         else{
-//             req.session.user = user.username;
-//             req.session.cookie.maxAge = 30 * 60 * 1000;
-//             console.log('sessionssss:::', req.session);
-//             console.log("session initilized");
-//             var obj = user;
-//             obj.stat = "logged in";
-//             console.log(obj);
-//             return res.status(201).json(obj);
-//         }
-//
-//     })(req, res);
-// });
-
 module.exports = app;
