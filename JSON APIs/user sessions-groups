@@ -1,4 +1,6 @@
 Make a group of users:
+users/creategroup
+POST:
 {
   req_id: 123123
   users:[
@@ -9,6 +11,7 @@ Make a group of users:
 }
 
 Return created group:
+POST: 
 {
   req_id: 123123,
   group_id:1212,

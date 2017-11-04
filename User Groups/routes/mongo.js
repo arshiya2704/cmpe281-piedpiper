@@ -1,7 +1,7 @@
 var MongoClient = require('mongodb').MongoClient;
 var db;
 var connected = false;
-var mongoURL = "mongodb://mongo:27017/group";
+var mongoURL = "mongodb://mongo:27017/bonappetit";
 
 /**
  * Connects to the MongoDB Database with the provided URL

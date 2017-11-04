@@ -45,3 +45,7 @@ In addition to above keypoints, we also keep in mind the following things:
 ### 12. Do not nit-pick, constantly criticize over little things, belittle, judge, demean or patronize. A series of seemingly trivial actions, added up over time, constitutes bullying.
 
 ### 13. Treat people the same no matter their race, religion, gender, size, age, or country of origin. Implement policies and procedures consistently so people feel that they are treated fairly and equally. Treating people differently can constitute harassment or a hostile work environment.
+
+Enhancement to keep our core value Respect in our mind, we do care about the following points too:
+
+### 14. Include all coworkers in meetings, discussions, training, and events. While not every person can participate in every activity, do not marginalize, exclude or leave any one person out. Provide an equal opportunity for employees to participate in committees, task forces, or continuous improvement teams. Solicit volunteers and try to involve every volunteer.
