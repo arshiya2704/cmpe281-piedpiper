@@ -6,8 +6,8 @@ const headers = {
 };
 
 const getItems = () =>
-    fetch(`${api}/getItems`, {
-        method: 'POST',
+    fetch(`${api}/items`, {
+        method: 'GET',
         headers: {
             ...headers,
             'Content-Type': 'application/json'
