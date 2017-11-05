@@ -1,5 +1,18 @@
 This page is about Weekly Meetings.
 
+# Week - 6:
+## This week's Progress:
+## 11-04-2017
+* Team members have started working on the APIs corresponding to each module of Shopping
+  cart application.
+* The team discussed and ensured the API flow across the modules is smooth.
+* Unit Testing is conducted for each of the functionalities developed so far.
+* Basic UI related work for all the web pages involved in the application is under progress.
+##Next-to-do:
+* Complete the ongoing work related to APIs and UI for each module of Bon Appètit.
+* Functional Testing of the integrated application including all modules to check for proper flow
+and bugs if any.
+
 # Week - 5: 
 ## This week's Progress:
 ## 10-27-2017
