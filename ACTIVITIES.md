@@ -15,6 +15,13 @@ Arshiya:-
 - UPdated core value- Respect.
 - Updated Burntdown chart.
 
+Manogna:-
+- Working on the APIs of Product Catalog module.
+- Updated product catalog database in Mongodb.
+- Updated User Story BDD scenarios.
+- Updated Core value - Communication.
+- Updated CFD for this week.
+
 ### Week 5 Updates:
 Ashish:-
 - Dockerised existing NodeJS and MongoDB and linked them to work together
