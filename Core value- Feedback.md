@@ -7,3 +7,6 @@
   
 - For modules assigned to everyone, each one gave some suggestions and flaws of their system. Everyone explained their      
   module's functionality to get feedback from others.  
+
+- Everyone presented their developed modules to demonstrate how they have implemented functionality. So that others can find 
+  flaws if there is any and give their suggestions for improvement. 
