@@ -28,6 +28,11 @@ Ashish :-
 - Updated XP Core value - feedback.
 - Updated WeeklyMeeting page, added progress of team for the last week.
 
+Jigar :-
+- Created API for creating groups of user it will get emails of users and creates groups so that group orders can be placed
+- Tried deploying docker containers for node and mongodb to aws, tried aws ECR, found it little complex, so asked instrctor for help
+- Updated Core Value - simplicity
+
 ### Week 5 Updates:
 Ashish:-
 - Dockerised existing NodeJS and MongoDB and linked them to work together
