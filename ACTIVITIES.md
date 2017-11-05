@@ -22,6 +22,12 @@ Manogna:-
 - Updated Core value - Communication.
 - Updated CFD for this week.
 
+Ashish :-
+- Created APIs for Shopping Cart modules like /addToCart, /removeFromCart and tested them with Postman.
+- Tried to deploy working Node server to AWS ECS.
+- Updated XP Core value - feedback.
+- Updated WeeklyMeeting page, added progress of team for the last week.
+
 ### Week 5 Updates:
 Ashish:-
 - Dockerised existing NodeJS and MongoDB and linked them to work together
