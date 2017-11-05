@@ -1,11 +1,19 @@
 # BonAppétit
 ### Week 6 updates:
+Nikita:-
 - Discussed about the flow of APIs in detail so that I got to know exactly the request and response objects I would be dealing with.
 - Designed passportJs authentication for login and registration , used local strategy here .
 - Designed the schema for Mongodb using nodejs w.r.t the collection structure decided upon previously.
 - Designed the sample front-end for login resgistration module using ejs and html for now.
 - Made slight changes in the acticity diagram .
 - Updated core value - Courage.md.
+
+Arshiya:-
+- Almost done with the API's of Payment module.
+- Started the basic UI implementation for payment page.
+- Made slight changes in the Sequence Diagram.
+- UPdated core value- Respect.
+- Updated Burntdown chart.
 
 ### Week 5 Updates:
 Ashish:-
