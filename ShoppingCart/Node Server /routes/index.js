@@ -57,12 +57,14 @@ router.get('/getGroupCartItems', function (req, res, next) {
 });
 
 
-router.get('/addToPersonalCart', function(req, res, next) {
+router.post('/addToPersonalCart', function(req, res, next) {
     try{
         mongo.connect(mongoURL, function(db){
             console.log('Connected to mongo at: ' + mongoURL);
             var reqitem = req.body.item;
             var userId = req.body.userId;
+            console.log("req body", userId);
+
             var coll = db.collection('personalcartitems');
 
             coll.findOne({userId},(err,cart)=>{
@@ -113,7 +115,7 @@ router.get('/addToPersonalCart', function(req, res, next) {
     } 
 });
 
-router.get('/addToGroupCart', function(req, res, next) {
+router.post('/addToGroupCart', function(req, res, next) {
     try{
         mongo.connect(mongoURL, function(db){
             console.log('Connected to mongo at: ' + mongoURL);
