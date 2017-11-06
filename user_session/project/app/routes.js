@@ -22,11 +22,22 @@ module.exports = function(app, passport){
 
 	
 
-	app.post('/signupone', passport.authenticate('local-signup',{
-		successRedirect: '/',
-		failureRedirect: '/signup',
-		failureFlash: true
-	}));
+	app.post('/signupone', function(req,res){
+		var newUser = new User();
+		var cryptedPassword = req.body.password;
+		newUser.local.username = req.body.email;
+		newUser.local.password = newUser.generateHash(cryptedPassword);
+		newUser.local.firstName = req.body.fName;
+		newUser.local.lastName = req.body.lName;
+		newUser.local.address = req.body.address;
+		newUser.local.phoneNumber = req.body.phNo;
+		newUser.save(function (err) {
+			if(err){
+				throw err;
+			}
+		});
+		res.redirect('/login');
+	});
 
 	app.get('/profile', isLoggedIn, function(req, res){
 		res.render('profile.ejs', { user: req.user })
