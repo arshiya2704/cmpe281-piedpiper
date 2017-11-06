@@ -42,12 +42,29 @@ module.exports = function(app, passport){
 	app.get('/profile', isLoggedIn, function(req, res){
 		res.render('profile.ejs', { user: req.user })
 	})
-
-	app.get('/index',function(req,res){
-		res.render('file.ejs')
-	})
 	
-  app.get('/logout', function(req, res){
+	app.get('/addToCart', isLoggedIn, function(req,res){
+		var userId = req.user.local.username;
+		console.log("logged in user: " + userId);
+		var newUser = new User();
+		var id;
+		User.findOne({ 'local.username' : userId}, function(err,user){
+			if(err)
+				return handleError(err);
+			else 
+				console.log("user found");
+
+			console.log("output: " + user.local.firstName);
+			id = user._id;
+			console.log("id is: " + id);
+			
+			//res.render('profile.ejs', { user: req.user._id });
+		})
+		
+	});
+	
+	
+ 	 app.get('/logout', function(req, res){
 		req.logout();
 		res.redirect('/');
 	})
