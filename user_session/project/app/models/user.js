@@ -3,12 +3,12 @@ var bcrypt = require('bcrypt');
 
 var userSchema = mongoose.Schema({
 	local: {
-		fName : String,
-		lName : String,
-		address : String,
-		phNo : Number,
 		username: String,
-		password: String
+		password: String,
+		firstName: String,
+		lastName: String,
+		address: String,
+		phoneNumber: Number
 	}
 });
 
