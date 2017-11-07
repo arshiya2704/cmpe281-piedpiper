@@ -2,7 +2,8 @@ var express = require('express');
 var router = express.Router();
 
 var mongo = require("./mongo");
-var mongoURL = "mongodb://localhost:27017/cmpe281";
+var mongoURL = "mongodb://ec2-13-56-84-60.us-west-1.compute.amazonaws.com,ec2-13-57-127-153.us-west-1.compute.amazonaws.com/bonapettit?replicaSet=example-replica-set";
+
  
 
 router.get('/getPersonalCartItems', function (req, res, next) {
@@ -10,7 +11,7 @@ router.get('/getPersonalCartItems', function (req, res, next) {
         try{
             mongo.connect(mongoURL, function(db){
             console.log('Connected to mongo at: ' + mongoURL);
-            var m = req.body.userId;
+            var userId = req.body.userId;
 
             var coll = db.collection('personalcartitems');
     
