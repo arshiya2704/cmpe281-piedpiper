@@ -42,7 +42,7 @@ module.exports = function(app, passport){
 	app.get('/profile', isLoggedIn, function(req, res){
 		res.render('profile.ejs', { user: req.user })
 	})
-	
+
 	app.get('/addToCart', isLoggedIn, function(req,res){
 		var userId = req.user.local.username;
 		console.log("logged in user: " + userId);
@@ -62,9 +62,23 @@ module.exports = function(app, passport){
 		})
 		
 	});
-	
-	
- 	 app.get('/logout', function(req, res){
+
+	//gets input as emailids then finds userId from database and then redirects to user group server
+	app.post('/creategroup', isLoggedIn, function(req, res){
+		for(var j=0; j<req.body.users.length; j++){
+			var userids = []
+			User.findOne({'local.email':req.body.users[j]}, function(err,user){
+				if(err)
+					return handleError(err);
+				else {
+                    console.log("user found");
+                    userids[i] = user.email;
+                }
+			})
+		}
+	});
+
+ 	app.get('/logout', function(req, res){
 		req.logout();
 		res.redirect('/');
 	})
