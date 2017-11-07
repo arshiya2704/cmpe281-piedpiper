@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 var product = mongoose.model('product', {
   category: {
     type: String,
-//    required: true
+    required: true
   },
   productId: {
     type: Number,
@@ -20,9 +20,9 @@ var product = mongoose.model('product', {
   },
   stockQuantity: {
     type: Number,
-//    required: true,
-  //  trim: true,
-    //minlength: 1
+    required: true,
+    trim: true,
+    minlength: 1
   }
 });
 
