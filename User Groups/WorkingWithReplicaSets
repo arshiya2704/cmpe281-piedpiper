@@ -1,0 +1,8 @@
+## Key Steps :
+Set up VPC named bonAppetite with public and private subnets, assign the ip addresses. Create the security group , open the ports HTTP, SSH and MongoDB(port no: 27017). Set up three EC2 instances named Mongo1 , Mongo2, Mongo3 of Ubuntu AMI, and connect it with the VPC created and the assign it to the security group made. Allocate three elastic ips and associate each with each of the three instances created, thus exposing the public ips.
+
+Added the MongoDB Repository
+
+Installed the MongoDB package
+
+Configured MongoDB to operate in replica set mode, as well as allow remote access to the server
