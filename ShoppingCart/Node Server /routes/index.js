@@ -6,7 +6,7 @@ var mongoURL = "mongodb://ec2-13-56-84-60.us-west-1.compute.amazonaws.com,ec2-13
 
  
 
-router.get('/getPersonalCartItems', function (req, res, next) {
+router.post('/getPersonalCartItems', function (req, res, next) {
     
         try{
             mongo.connect(mongoURL, function(db){
@@ -74,14 +74,14 @@ router.post('/addToPersonalCart', function(req, res, next) {
                     coll.find({userId,"items.itemId":reqitem.itemId},(err,item)=>{
 
                         if(item){
+                            console.log("Item found:" +reqitem.itemId);
                             coll.update(
                                 {   
-                                    userId,"items.itemId":item.itemId 
+                                    userId,"items.itemId":reqitem.itemId 
                                 },
                                 {
-                                    "$inc":{"items.$.qty": 1
-                                }
-                            });
+                                    "$inc":{"items.$.quantity": 1}
+                                });
                         }
                         else{
                             coll.update(
@@ -132,10 +132,10 @@ router.post('/addToGroupCart', function(req, res, next) {
                         if(item){
                             coll.update(
                                 {   
-                                    groupId,"items.itemId":item.itemId 
+                                    groupId,"items.itemId":reqitem.itemId 
                                 },
                                 {
-                                    "$inc":{"items.$.qty": 1}
+                                    "$inc":{"items.$.quantity": 1}
                                 }
                             );
                         }
