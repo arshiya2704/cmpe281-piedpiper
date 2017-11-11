@@ -3,8 +3,8 @@ var router = express.Router();
 var mongoose = require('./mongoose');
 
 /* GET users listing. */
-router.post('/api/checkout', function (req, res) {
-    console.log('checkout is being called');
+router.post('/api/save', function (req, res) {
+    console.log('checkout is being');
     console.log(req.body);
     var fname = req.body.fname;
     var lname = req.body.lname;
@@ -40,4 +40,18 @@ router.post('/api/checkout', function (req, res) {
 
 });
 
+router.post('/api/checkout', function (req, res) {
+    var userId= req.userId;
+    var qty = req.qty;
+    var itemId= req.itemId;
+    var total = req.total;
+    console.log(userId);
+    console.log(qty);
+    console.log(itemId);
+    console.log(total);
+
+    return res.status(200).send({message:"Order has been placed"});
+});
+
 module.exports = router;
+

@@ -1,0 +1,58 @@
+## Create and launch MongoDB replica sets on AWS.
+
+# Launch EC2 Instances: 
+
+The first step in setting up the replica set is to prepare the instances for running MongoDB.
+
+Start 3 brand-new Ubuntu 14.04 LTS instances in the EC2 console, making sure to set up each one in a different availability zone, for increased availability in case of service outage in one AZ. 
+
+Create a new security group, mongodb-cluster, and configure all three instances to use it. Allow SSH on port 22 from your IP only and port 27017 from the mongodb-cluster security group (sg-65d4d11d for example) as well as from your IP address, so that both you and the replica set members will be able to connect to each other's mongod process listening on port 27017.
+Next, request 3x Elastic IPs and attach them to each instance.
+Set the Hostname:
+SSH into each server and set its hostname so that when we initialize the replica set, members will be able to understand how to reach one another:
+sudo bash -c 'echo db1.Public DNS > /etc/hostname && hostname -F /etc/hostname'
+
+# Install MongoDB:
+
+Run the following commands to install the latest stable 3.4.x version of MongoDB:
+
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6
+echo "deb [ arch=amd64 ] http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.list
+sudo apt-get update
+sudo apt-get install -y mongodb-org
+
+# Configure MongoDB:
+Now it's time to configure MongoDB to operate in replica set mode, as well as allow remote access to the server.
+sudo nano /etc/mongod.conf
+
+Find and remove the following line entirely, or prefix it with a # to comment it out:
+bindIp: 127.0.0.1
+
+Next, find:
+#replication:
+Add the following below, replacing example-replica-set with a name for your replica set:
+replication:
+ replSetName: "example-replica-set"
+
+Finally, restart MongoDB to apply the changes:
+sudo service mongod restart
+Make these modifications on all of your members, making sure to specify the same exact replica set name when configuring the other members.
+
+#Initialize the Replica Set:
+Connect to one of the MongoDB instances (preferably db1) to initialize the replica set and declare its members. Note that you only have to run these commands on one of the members. MongoDB will synchronize the replica set configuration to all of the other members automatically.
+Connect to MongoDB via the following command:
+mongo <db1.public DNS>
+
+#Initialize the replica set:
+rs.initiate()
+The command will automatically add the current member as the first member of the replica set.
+
+#Add the second data member to the replica set:
+rs.add("db2.example.com")
+
+And finally, add the arbiter, making sure to pass in true as the second argument (which denotes that the member is an arbiter and not a data member).
+rs.add("arbiter1.example.com", true)
+
+#Verify Replica Set Status:
+Take a look at the replica set status by running:
+rs.status()

@@ -51,5 +51,35 @@ router.post('/creategroup', function(req, res) {
     }
 });
 
+app.post('/login', function(req, res) {
+    console.log('sess:', req.body);
+    mongo.connect(mongoURL, function(){
+        var coll = mongo.collection('groups')
+
+        var groupObj = {}
+        groupObj.users = req.body.users;
+        groupObj.name = req.body.name;
+        coll.insertOne(groupObj, function(err, result) {
+        if(err) {
+            res.status(500).send();
+        }
+
+        if(!user) {
+            res.status(401).send();
+        }
+        else{
+            req.session.user = user;
+            req.session.cookie.maxAge = 30 * 60 * 1000;
+            console.log('sessionssss:::', req.session);
+            console.log("session initilized");
+            var obj = user;
+            obj.stat = "logged in";
+            console.log(obj);
+            return res.status(201).json(obj);
+        }
+
+    })(req, res);
+});
+
 
 module.exports = router;
