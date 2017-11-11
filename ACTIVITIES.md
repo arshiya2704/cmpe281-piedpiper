@@ -8,6 +8,7 @@ Nikita:-
 - Then followed the necessary steps of settimg up the said connection between EC2 instances and databases keeping Mongo replica sets in   mind. 
 - Did the necessary changes to set up the connection between by API and the mongo databases provided by AWS. 
 - Tested by sending a request to the API and receiving the necessary response that my entires connection setup is working fine.
+- Updated XP core value, Courage as maintained by our group this week. 
 
 ### Week 6 updates:
 Nikita:-
