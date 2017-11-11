@@ -45,6 +45,24 @@ app.get('/drinks', (req, res) => {
   })
 });
 
+app.patch('/products/:id', (req, res) => {
+console.log('Entered patch work');
+  var id = req.params.id;
+//  var body = _.pick(req.body, ['stockQuantity']);
+  products.findOneAndUpdate({
+    "productId": id
+  }).then ((product) => {
+    console.log('Product Found');
+    if(!product) {
+      console.log('Product not found');
+//      return res.status(404).send();
+    }
+    res.send({product});
+  }).catch((e) => {
+    res.status(400).send();
+  })
+});
+
 app.listen(3001, () => {
   console.log('Server is up and running at 3001');
 });
