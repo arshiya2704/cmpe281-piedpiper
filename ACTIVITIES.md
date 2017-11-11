@@ -1,4 +1,14 @@
 # BonAppétit
+### Week 7 updates:
+Nikita:-
+- Learnt in detail how MongoDB can be deployed in AWS with the help of Ubuntu AMI . 
+- Hence also learnt the steps of installing and using MongoDB in Ubuntu .
+- In my AWS account, created a VPC, security group , and three EC2 instances . 
+- Since the aim of project will be data sharding by making three copies of my mongo databaase , the three EC2 isntances are then linked   to the three mongo databases so that, one is primary where main data is stored and other two will be secondary where data will be       backed up.
+- Then followed the necessary steps of settimg up the said connection between EC2 instances and databases keeping Mongo replica sets in   mind. 
+- Did the necessary changes to set up the connection between by API and the mongo databases provided by AWS. 
+- Tested by sending a request to the API and receiving the necessary response that my entires connection setup is working fine.
+
 ### Week 6 updates:
 Nikita:-
 - Discussed about the flow of APIs in detail so that I got to know exactly the request and response objects I would be dealing with.
