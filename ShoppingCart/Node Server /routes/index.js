@@ -2,9 +2,13 @@ var express = require('express');
 var router = express.Router();
 
 var mongo = require("./mongo");
-var mongoURL = "mongodb://ec2-13-56-84-60.us-west-1.compute.amazonaws.com,ec2-13-57-127-153.us-west-1.compute.amazonaws.com/bonapettit?replicaSet=example-replica-set";
+var mongoURL = "mongodb://ip-10-1-1-157.us-west-1.compute.internal,ip-10-1-2-224.us-west-1.compute.internal/bonapettit?replicaSet=example-replica-set";
 
  
+
+router.get('/',(req,res)=>{
+    res.status(201).send({"message":"Node App Alive"});
+})
 
 router.post('/getPersonalCartItems', function (req, res, next) {
     
@@ -31,7 +35,7 @@ router.post('/getPersonalCartItems', function (req, res, next) {
       
 });
 
-router.get('/getGroupCartItems', function (req, res, next) {
+router.post('/getGroupCartItems', function (req, res, next) {
     
         try{
             mongo.connect(mongoURL, function(db){
@@ -105,6 +109,7 @@ router.post('/addToPersonalCart', function(req, res, next) {
                         "items":[{itemId:reqitem.itemId,itemName:reqitem.itemName,quantity:1}],
                     });
                 }
+                res.status(201).send({"message":"Item added Successfully"});
 
             });
 
@@ -161,6 +166,7 @@ router.post('/addToGroupCart', function(req, res, next) {
                         "items":[{itemId:reqitem.itemId,itemName:reqitem.itemName,quantity:1}],
                     });
                 }
+                res.status(201).send({"message":"Item added Successfully"});
 
             });
 
@@ -174,7 +180,7 @@ router.post('/addToGroupCart', function(req, res, next) {
 
 
 
-router.get('/removeFromPersonalCart', function(req, res, next) {
+router.post('/removeFromPersonalCart', function(req, res, next) {
     try{
         mongo.connect(mongoURL, function(db){
             console.log('Connected to mongo at: ' + mongoURL);
@@ -184,7 +190,7 @@ router.get('/removeFromPersonalCart', function(req, res, next) {
 
             coll.update(
                 {  userId },
-                { $pull: { "items": { "id":reqitem.itemId } } }
+                { $pull: { "items": { "itemId":reqitem.itemId } } }
             )
         });    
     }
@@ -193,7 +199,7 @@ router.get('/removeFromPersonalCart', function(req, res, next) {
     } 
 });
 
-router.get('/removeFromGroupCart', function(req, res, next) {
+router.post('/removeFromGroupCart', function(req, res, next) {
     try{
         mongo.connect(mongoURL, function(db){
             console.log('Connected to mongo at: ' + mongoURL);
