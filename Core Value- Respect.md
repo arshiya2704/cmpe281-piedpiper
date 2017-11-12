@@ -49,3 +49,9 @@ In addition to above keypoints, we also keep in mind the following things:
 Enhancement to keep our core value Respect in our mind, we do care about the following points too:
 
 ### 14. Include all coworkers in meetings, discussions, training, and events. While not every person can participate in every activity, do not marginalize, exclude or leave any one person out. Provide an equal opportunity for employees to participate in committees, task forces, or continuous improvement teams. Solicit volunteers and try to involve every volunteer.
+
+In last weeks of the project implementation but still the core value-Respect is given utmost importance:
+
+### 15. Praise much more frequently than you criticize. Encourage praise and recognition from employee to employee as well as from the supervisor.
+
+### 16. The golden rule does apply at work, or, as professional speaker Leslie Charles, says, “Implement the platinum rule: treat others as they wish to be treated.””
