@@ -46,21 +46,21 @@ app.get('/drinks', (req, res) => {
 });
 
 app.patch('/products/:id', (req, res) => {
-console.log('Entered patch work');
+  var stock;
   var id = req.params.id;
-//  var body = _.pick(req.body, ['stockQuantity']);
-  products.findOneAndUpdate({
-    "productId": id
-  }).then ((product) => {
-    console.log('Product Found');
-    if(!product) {
-      console.log('Product not found');
-//      return res.status(404).send();
-    }
+  product.find({"_id": req.params.id }).then ((prod)=> {
+    stock = prod.stockQuantity;
+  });
+  if(!product) {
+    return res.status(404).send();
+  }
+  var body = _.pick(req.body, ['stockQuantity']);
+  body.stockQuantity = stock - body.stockQuantity;
+  product.findOneAndUpdate(id, {$set: body}, {new: true}).then ((product) => {
     res.send({product});
   }).catch((e) => {
     res.status(400).send();
-  })
+  });
 });
 
 app.listen(3001, () => {
