@@ -1,5 +1,6 @@
 # BonAppétit
 ### Week 7 updates:
+
 Nikita:-
 - Learnt in detail how MongoDB can be deployed in AWS with the help of Ubuntu AMI . 
 - Hence also learnt the steps of installing and using MongoDB in Ubuntu .
@@ -16,6 +17,15 @@ Jigar:-
 - Connected local server to deployed database
 - Bug fixes in backend
 - Configured and created frontend server on local machine
+
+Ashish:-
+- Researched about how to create Mongo Replica set on AWS.
+- Found a procedure to create MongoDB replica sets on AWS by using AWS EC2 instances. Created 2 mongo replicas with 1 arbitar.
+- Connected this MongoDB from my local node app server.
+- Deployed node app server to AWS and connected MongoDB from that deployed app. As all instances are running in same VPC, they 
+  are able to communicte with each other.
+- Created APIs for /addToPersonalCart, /addToGroupCart,/removeFromPersonalCart, /removeFromGroupCart.
+- Updated XP core value - Feedback.
 
 ### Week 6 updates:
 Nikita:-
