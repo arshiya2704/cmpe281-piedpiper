@@ -36,6 +36,14 @@ Ashish:-
 - Created APIs for /addToPersonalCart, /addToGroupCart,/removeFromPersonalCart, /removeFromGroupCart.
 - Updated XP core value - Feedback.
 
+Manogna:-
+- Performed a thorough research on how to create and deploy MongoDB replica set on AWS.
+- Created 3 MongoDB intances each of which running on 3 different Elastic IPs and belong to common Security group.
+- Created the MongoDB replica set and verified the partition tolerance.
+- Updated the PATCH API to update the stock quantity.
+- Updated the Weekly Meetings.
+- Updated the core value - Communication
+
 ### Week 6 updates:
 Nikita:-
 - Discussed about the flow of APIs in detail so that I got to know exactly the request and response objects I would be dealing with.
