@@ -1,3 +1,5 @@
+const _ = require('lodash');
+
 var express = require('express');
 var bodyParser = require('body-parser');
 
@@ -49,19 +51,26 @@ app.patch('/products/:id', (req, res) => {
   var stock;
   var id = req.params.id;
   product.find({"_id": req.params.id }).then ((prod)=> {
-    stock = prod.stockQuantity;
+    stock = prod[0].stockQuantity;
+    var updatedQuantity = stock - body.quantity;
+    product.findOneAndUpdate(id, {$set: {"stockQuantity": updatedQuantity}}, {new: true}).then ((product) => {
+      console.log({product});
+      res.status(200).send();
+    }).catch((e) => {
+      res.status(400).send();
+    });
   });
   if(!product) {
+    console.log('Product not found');
     return res.status(404).send();
   }
-  var body = _.pick(req.body, ['stockQuantity']);
-  body.stockQuantity = stock - body.stockQuantity;
-  product.findOneAndUpdate(id, {$set: body}, {new: true}).then ((product) => {
-    res.send({product});
-  }).catch((e) => {
-    res.status(400).send();
-  });
+    var body = _.pick(req.body, ['quantity']);
 });
+
+app.listen(3001, () => {
+  console.log('Server is up and running at 3001');
+});
+
 
 app.listen(3001, () => {
   console.log('Server is up and running at 3001');
