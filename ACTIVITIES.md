@@ -10,6 +10,13 @@ Nikita:-
 - Tested by sending a request to the API and receiving the necessary response that my entires connection setup is working fine.
 - Updated XP core value, Courage as maintained by our group this week. 
 
+Jigar:-
+- Created MongoDB replica sets locally
+- Deployed 3 instances of mongodb to AWS 
+- Connected local server to deployed database
+- Bug fixes in backend
+- Configured and created frontend server on local machine
+
 ### Week 6 updates:
 Nikita:-
 - Discussed about the flow of APIs in detail so that I got to know exactly the request and response objects I would be dealing with.
