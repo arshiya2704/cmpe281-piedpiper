@@ -1,6 +1,15 @@
 # BonAppétit
 ### Week 7 updates:
 
+Arshiya:-
+- Researched about how Mongo Replica Set can be deployed on AWS.
+- Created 2 mongo replicas by using AWS EC2 instances with one arbiter, which switches the load if one node goes down.
+- Connected the mongo instance with my local node server.
+- Updated APIs for Payment module.
+- Updated CFD.
+- Updated Burntdown chart.
+- Updated XP core value, Respect.
+
 Nikita:-
 - Learnt in detail how MongoDB can be deployed in AWS with the help of Ubuntu AMI . 
 - Hence also learnt the steps of installing and using MongoDB in Ubuntu .
