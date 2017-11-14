@@ -67,8 +67,26 @@ app.patch('/products/:id', (req, res) => {
     var body = _.pick(req.body, ['quantity']);
 });
 
-app.listen(3001, () => {
-  console.log('Server is up and running at 3001');
+app.get('/:id',(req, res) => {
+  var id = req.params.id;
+  product.find({"_id": req.params.id }).then ((products) => {
+    if (products[0].stockQuantity > 0) {
+      res.send(JSON.stringify({
+        "inStock": true
+      }));
+    }
+    else {
+      res.send(JSON.stringify({
+        "inStock": false
+      }));
+    }
+  }).catch((error) => {
+    res.status(400).send();
+  });
+  if(!product) {
+    console.log('Product not found');
+    return res.status(404).send();
+  }
 });
 
 
