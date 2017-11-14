@@ -1,4 +1,49 @@
 # BonAppétit
+### Week 7 updates:
+
+Arshiya:-
+- Researched about how Mongo Replica Set can be deployed on AWS.
+- Created 2 mongo replicas by using AWS EC2 instances with one arbiter, which switches the load if one node goes down.
+- Connected the mongo instance with my local node server.
+- Updated APIs for Payment module.
+- Updated CFD.
+- Updated Burntdown chart.
+- Updated XP core value, Respect.
+
+Nikita:-
+- Learnt in detail how MongoDB can be deployed in AWS with the help of Ubuntu AMI . 
+- Hence also learnt the steps of installing and using MongoDB in Ubuntu .
+- In my AWS account, created a VPC, security group , and three EC2 instances . 
+- Since the aim of project will be data sharding by making three copies of my mongo databaase , the three EC2 isntances are then linked   to the three mongo databases so that, one is primary where main data is stored and other two will be secondary where data will be       backed up.
+- Then followed the necessary steps of settimg up the said connection between EC2 instances and databases keeping Mongo replica sets in   mind. 
+- Did the necessary changes to set up the connection between by API and the mongo databases provided by AWS. 
+- Tested by sending a request to the API and receiving the necessary response that my entires connection setup is working fine.
+- Updated XP core value, Courage as maintained by our group this week. 
+
+Jigar:-
+- Created MongoDB replica sets locally
+- Deployed 3 instances of mongodb to AWS 
+- Connected local server to deployed database
+- Bug fixes in backend
+- Configured and created frontend server on local machine
+
+Ashish:-
+- Researched about how to create Mongo Replica set on AWS.
+- Found a procedure to create MongoDB replica sets on AWS by using AWS EC2 instances. Created 2 mongo replicas with 1 arbitar.
+- Connected this MongoDB from my local node app server.
+- Deployed node app server to AWS and connected MongoDB from that deployed app. As all instances are running in same VPC, they 
+  are able to communicte with each other.
+- Created APIs for /addToPersonalCart, /addToGroupCart,/removeFromPersonalCart, /removeFromGroupCart.
+- Updated XP core value - Feedback.
+
+Manogna:-
+- Performed a thorough research on how to create and deploy MongoDB replica set on AWS.
+- Created 3 MongoDB intances each of which running on 3 different Elastic IPs and belong to common Security group.
+- Created the MongoDB replica set and verified the partition tolerance.
+- Updated the PATCH API to update the stock quantity.
+- Updated the Weekly Meetings.
+- Updated the core value - Communication
+
 ### Week 6 updates:
 Nikita:-
 - Discussed about the flow of APIs in detail so that I got to know exactly the request and response objects I would be dealing with.

@@ -1,4 +1,15 @@
 This page is about Weekly Meetings.
+# Week - 7:
+## This week's Progress:
+## 11-11-2017
+* Team has met to discuss about the implementation of the partition tolerance with 3 nodes.
+* All the team members have collectively deployed their respective MongoDB replica sets on individual AWS accounts and tested partition recovery.
+* Unit Testing is conducted for each of the functionalities developed so far.
+* Basic UI related work for all the web pages involved in the application is under progress.
+## Next-to-do:
+* Functional Testing of the integrated application including all modules to check for proper flow
+and bugs if any.
+* All the team members to complete the UI related work of the application.
 
 # Week - 6:
 ## This week's Progress:

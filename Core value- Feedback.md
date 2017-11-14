@@ -10,3 +10,6 @@
 
 - Everyone presented their developed modules to demonstrate how they have implemented functionality. So that others can find 
   flaws if there is any and give their suggestions for improvement. 
+  
+- During week six, Team discussed about deploying MongoDB on AWS with replica set. Everyone suggested their ideas and provided 
+  feedback to others.
