@@ -7,7 +7,7 @@ var mongoURL = "mongodb://ip-10-1-1-157.us-west-1.compute.internal,ip-10-1-2-224
  
 
 router.get('/',(req,res)=>{
-    res.status(201).send({"message":"Node App Alive"});
+    res.status(201).send({"message":"Alive"});
 })
 
 router.post('/getPersonalCartItems', function (req, res, next) {
@@ -75,33 +75,50 @@ router.post('/addToPersonalCart', function(req, res, next) {
             coll.findOne({userId},(err,cart)=>{
 
                 if(cart){
-                    coll.find({userId,"items.itemId":reqitem.itemId},(err,item)=>{
 
-                        if(item){
-                            console.log("Item found:" +reqitem.itemId);
-                            coll.update(
-                                {   
-                                    userId,"items.itemId":reqitem.itemId 
-                                },
-                                {
-                                    "$inc":{"items.$.quantity": 1}
-                                });
-                        }
-                        else{
-                            coll.update(
-                                { userId },
-                                {
-                                  $push: {
-                                    items: 
-                                    { 
-                                        itemId:reqitem.itemId,itemName:reqitem.itemName,quantity:1
+                    console.log("length :"+cart.items.length);
+
+                    if(cart.items.length >0){
+                        coll.find({userId,"items.itemId":reqitem.itemId},(err,item)=>{
+                            
+                            if(item){
+                                console.log("Item found:" +reqitem.itemId);
+                                coll.update(
+                                    {   
+                                        userId,"items.itemId":reqitem.itemId 
+                                    },
+                                    {
+                                        "$inc":{"items.$.quantity": 1}
+                                    });
+                            }
+                            else{
+                                coll.update(
+                                    { userId },
+                                    {
+                                        $push: {
+                                        items: 
+                                        { 
+                                            itemId:reqitem.itemId,itemName:reqitem.itemName,quantity:1
+                                        }
+                                        }
                                     }
-                                  }
+                                    );     
+                            }
+                            
+                        });
+                    }
+                    else{
+                        coll.update(
+                            { userId },
+                            {
+                                $push: {
+                                items: 
+                                { 
+                                    itemId:reqitem.itemId,itemName:reqitem.itemName,quantity:1
                                 }
-                             );     
-                        }
-                        
-                    });
+                                }
+                        });   
+                    }
                 }
                 else{
                     coll.insert({
@@ -187,11 +204,12 @@ router.post('/removeFromPersonalCart', function(req, res, next) {
             var reqitem = req.body.item;
             var userId = req.body.userId;
             var coll = db.collection('personalcartitems');
-
+            console.log("here");
             coll.update(
                 {  userId },
                 { $pull: { "items": { "itemId":reqitem.itemId } } }
             )
+            res.status(201).send({"message":"Item removed Successfully"});
         });    
     }
     catch (e){
@@ -211,6 +229,7 @@ router.post('/removeFromGroupCart', function(req, res, next) {
                 {  groupId },
                 { $pull: { "items": { "id":reqitem.itemId } } }
             )
+            res.status(201).send({"message":"Item removed Successfully"});
         });    
     }
     catch (e){
