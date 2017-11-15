@@ -1,42 +1,37 @@
 <html>
     <head>
-        <title>Calculator</title>
+        <title>Cart</title>
         <link rel="stylesheet"
               href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-        <script src="javascript/api.js"></script>
         
     </head>
     
-    <script type="text/javascript">
-
-        function onRemove(item) {
-            console.log(item);
-
-            API.removeFromPersonalCart({"userId":"5",item:item})
-            .then((res) => {
-                if (res.status === 201) {
-                    window.location.reload();
-                }else if (res.status === 401) {
-                    console.log("Fail");
-                }
-            });    
-        }
-    </script>
-            
     <body>
         <%
         var items = items;
         %>
-        <form class="form-horizontal" role="form" method="post" id="myForm" action="remove">
+        <form class="form-horizontal" role="form" method="post" id="myForm" action="">
             
             <div class="container">
                 <h1>Cart</h1>
                 <br/>
                 <% items.forEach(function(item) { %>
-                    <li id= '<%= item.itemId %>'>Item Name:<%= item.itemName %> and Quantity <%= item.quantity %>  
-                    <button onclick="onRemove('<%= item %>')"></button> </li> 
+
+                    <li class="list-group-item clearfix">
+                            <div class="col-xs-5">
+                                <strong><%= item.itemName %></strong><br/>
+                                
+                            </div>
+                            <div class="col-xs-2 text-right">
+                                <span class="badge"><%= item.quantity %> </span>
+                            </div>
+                            
+                            <div class="col-xs-2 text-right">
+                                <a href="/cart/remove/<%= item.itemId %>" class="btn btn-default"></i> Remove</a>
+                            </div>
+                    </li>
                 <% }); %>
 
             </div>

@@ -7,8 +7,7 @@ var bodyParser = require('body-parser');
 
 var session = require('express-session');
 
-var index = require('./routes/index');
-var remove = require('./routes/remove');
+var cart = require('./routes/cart');
 var app = express();
 
 // view engine setup
@@ -35,8 +34,8 @@ app.use(function(req, res, next) {
     next();
 });
 
-app.get('/', index.showCart);
-app.post('/',remove.removeItem);
+app.use('/cart', cart);
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
@@ -51,7 +50,7 @@ app.use(function(err, req, res, next) {
   res.locals.error = req.app.get('env') === 'development' ? err : {};
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  res.render('error: '+err);
 });
 
 module.exports = app;

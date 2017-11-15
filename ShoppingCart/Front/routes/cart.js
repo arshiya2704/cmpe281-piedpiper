@@ -4,16 +4,12 @@ var ejs = require("ejs");
 
 var API =require('../API/api');
 
-function removeItem(req, response) {
+router.get('/', function(req, response, next) {
 
-    
-
-    API.removeFromPersonalCart({"userId":"5"})
+    API.getPersonalCartItems({"userId":"5"})
     .then((res) => {
         if (res.status === 201) {
             res.json().then(data => {
-                console.log("got this: "+JSON.stringify(data[0].items[1].itemId));
-
                 ejs.renderFile('./views/front.ejs',{items:data[0].items},function(err, result) {
                     // render on success
                     if (!err) {
@@ -32,6 +28,24 @@ function removeItem(req, response) {
             console.log("Fail");
         }
     });     
-}
+});
 
-exports.removeItem = removeItem;
+router.get('/remove/:id', function(req, res, next) {
+    var itemId = req.params.id;
+    //console.log("Id is dddd: "+ parseInt(" "+itemId));
+    API.removeFromPersonalCart({"userId":"5","itemId":itemId})
+    .then((res) => {
+        if (res.status === 201) {
+            res.json().then(data => {
+                console.log(data.message);
+            });
+            
+        }else if (res.status === 401) {
+            console.log("Fail");
+        }
+    });     
+    res.redirect('/cart');
+  });
+
+
+  module.exports = router;
