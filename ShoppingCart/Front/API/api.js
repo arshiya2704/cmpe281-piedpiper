@@ -1,4 +1,4 @@
-const api = process.env.REACT_APP_CONTACTS_API_URL || 'http://localhost:3000';
+const api = 'http://localhost:3000';
 var fetch = require('node-fetch');
 const headers = {
     'Accept': 'application/json'

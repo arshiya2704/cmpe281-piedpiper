@@ -47,5 +47,25 @@ router.get('/remove/:id', function(req, res, next) {
     res.redirect('/cart');
   });
 
+  router.get('/checkout/:total', function(req, res, next) {
+    // var itemId = req.params.id;
+    // //console.log("Id is dddd: "+ parseInt(" "+itemId));
+    // API.removeFromPersonalCart({"userId":"5","itemId":itemId})
+    // .then((res) => {
+    //     if (res.status === 201) {
+    //         res.json().then(data => {
+    //             console.log(data.message);
+    //         });
+            
+    //     }else if (res.status === 401) {
+    //         console.log("Fail");
+    //     }
+    // });     
+    // res.redirect('/cart');
+    console.log("Checkout");
+    console.log("Total :"+req.params.total);
+    res.redirect('/cart');
+  });
+
 
   module.exports = router;
