@@ -1,7 +1,7 @@
 const apis = process.env.REACT_APP_CONTACTS_API_URL || 'http://localhost:3002';
+var fetch= require ('node-fetch');
 
-
-export const deduct = (payload) =>
+const deduct = (payload) =>
 fetch(`${apis}/users/api/deduct`, {
     method: 'POST',
     headers: {
@@ -15,3 +15,5 @@ fetch(`${apis}/users/api/deduct`, {
 .catch(error => {
     console.log("This is error");
 return error;});
+
+exports.deduct= deduct;
