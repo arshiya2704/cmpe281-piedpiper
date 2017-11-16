@@ -4,6 +4,19 @@ const headers = {
     'Accept': 'application/json'
 };
 
+export const createGroup = (payload) =>
+    fetch(`${api}/creategroup`, {
+        method:'POST',
+        headers:{
+            ...headers,
+            'Content-Type':'application/json'
+        },
+        credentials:'include'
+        body:JSON.stringify(payload)
+    }).then(res => {
+        return res
+    })
+
 export const doLogin = (payload) =>
     fetch(`${api}/login`, {
         method: 'POST',

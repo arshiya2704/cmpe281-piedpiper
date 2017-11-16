@@ -1,18 +1,18 @@
 var MongoClient = require('mongodb').MongoClient;
 var db;
 var connected = false;
-var mongoURL = "mongodb://mongo:27017/bonappetit";
+
 
 /**
  * Connects to the MongoDB Database with the provided URL
  */
 exports.connect = function(url, callback){
     MongoClient.connect(url, function(err, _db){
-        if (err) { throw new Error('Could not connect: '+err); }
-        db = _db;
-        connected = true;
-        console.log(connected +" is connected?");
-        callback(db);
+      if (err) { throw new Error('Could not connect: '+err); }
+      db = _db;
+      connected = true;
+      console.log(connected +" is connected?");
+      callback(db);
     });
 };
 
@@ -21,8 +21,8 @@ exports.connect = function(url, callback){
  */
 exports.collection = function(name){
     if (!connected) {
-        throw new Error('Must connect to Mongo before calling "collection"');
-    }
+      throw new Error('Must connect to Mongo before calling "collection"');
+    } 
     return db.collection(name);
-
+  
 };

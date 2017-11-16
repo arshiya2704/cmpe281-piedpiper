@@ -1,7 +1,7 @@
 var express = require('express');
 var mongo = require("./mongo")
-//var mongoURL = "mongodb://localhost:27017/bonappetit";
-var mongoURL = "mongodb://ip-10-1-2-245.us-west-1.compute.internal,ip-10-1-3-35.us-west-1.compute.internal/bonapetit?replicaSet=example-replica-set"
+var mongoURL = "mongodb://localhost:27017/bonappetit";
+//var mongoURL = "mongodb://ip-10-1-2-245.us-west-1.compute.internal,ip-10-1-3-35.us-west-1.compute.internal/bonapetit?replicaSet=example-replica-set"
 var router = express.Router();
 
 
@@ -24,6 +24,7 @@ router.post('/creategroup', function(req, res) {
             groupObj.users = req.body.users;
             groupObj.name = req.body.name;
             //groupObj.timestamp = {$type:"timestamp"}
+            groupObj.timestamp = new Date();
             coll.insertOne(groupObj, function(err, result) {
                 if (err) {
                     res.status(400).json({
