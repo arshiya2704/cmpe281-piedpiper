@@ -19,4 +19,5 @@ docker run -d 617487773334.dkr.ecr.us-west-1.amazonaws.com/node-app:latest
 - Verify if the container is up and running on Docker:
 docker ps –a
 - Create Task Definition by adding a container with the image in the repository and host port and container port set to 3000.
+- Create a Service in Cluster with appropriate Task Definition, Target Group, conatiner and port.
 - Finally check the ECS instance and running in EC2 Dashboard and verify by accessing a ping API using Public IP of Container Instance.
