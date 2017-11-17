@@ -19,7 +19,17 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
               <caret line="11" column="41" lean-forward="false" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-              <folding />
+              <folding>
+                <marker date="1510801646900" expanded="true" signature="130:166" ph="{&quot;Accept&quot;: 'application/json'...}" />
+                <marker date="1510801646900" expanded="true" signature="234:449" ph="{&quot;method&quot;: 'POST'...}" />
+                <marker date="1510801646900" expanded="true" signature="275:374" ph="{&quot;Accept&quot;: 'application/json'...}" />
+                <marker date="1510801646900" expanded="true" signature="463:489" ph="{...}" />
+                <marker date="1510801646900" expanded="true" signature="513:590" ph="{...}" />
+                <marker date="1510801646900" expanded="true" signature="642:749" ph="{&quot;method&quot;: 'GET'...}" />
+                <marker date="1510801646900" expanded="true" signature="684:742" ph="{&quot;Content-Type&quot;: 'application/json'...}" />
+                <marker date="1510801646900" expanded="true" signature="763:790" ph="{...}" />
+                <marker date="1510801646900" expanded="true" signature="816:887" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -29,17 +39,121 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="18">
               <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1510801530044" expanded="true" signature="304:328" ph="/*...*/" />
+                <marker date="1510801530044" expanded="true" signature="370:422" ph="{...}" />
+                <marker date="1510801530044" expanded="true" signature="465:516" ph="{...}" />
+                <marker date="1510801530044" expanded="true" signature="566:1906" ph="{...}" />
+                <marker date="1510801530044" expanded="true" signature="575:1845" ph="{...}" />
+                <marker date="1510801530044" expanded="true" signature="619:1838" ph="{...}" />
+                <marker date="1510801530044" expanded="true" signature="949:1827" ph="{...}" />
+                <marker date="1510801530044" expanded="true" signature="976:1145" ph="{...}" />
+                <marker date="1510801530044" expanded="true" signature="1019:1126" ph="{&quot;message&quot;: &quot;not inserted&quot;...}" />
+                <marker date="1510801530044" expanded="true" signature="1166:1813" ph="{...}" />
+                <marker date="1510801530044" expanded="true" signature="1286:1798" ph="{...}" />
+                <marker date="1510801530044" expanded="true" signature="1317:1506" ph="{...}" />
+                <marker date="1510801530044" expanded="true" signature="1364:1483" ph="{&quot;message&quot;: &quot;not inserted&quot;...}" />
+                <marker date="1510801530044" expanded="true" signature="1531:1780" ph="{...}" />
+                <marker date="1510801530044" expanded="true" signature="1578:1761" ph="{&quot;req_id&quot;: req.body.req_id...}" />
+                <marker date="1510801530044" expanded="true" signature="1860:1904" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="API.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="API.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Frontend/src/api/API.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="76" lean-forward="false" selection-start-line="0" selection-start-column="76" selection-end-line="0" selection-end-column="76" />
-              <folding />
+              <folding>
+                <marker date="1510901611769" expanded="true" signature="95:131" ph="{&quot;Accept&quot;: 'application/json'...}" />
+                <marker date="1510901611769" expanded="true" signature="206:402" ph="{&quot;method&quot;: 'POST'...}" />
+                <marker date="1510901611769" expanded="true" signature="247:328" ph="{&quot;Content-Type&quot;: 'application/json'...}" />
+                <marker date="1510901611769" expanded="true" signature="416:442" ph="{...}" />
+                <marker date="1510901611769" expanded="true" signature="507:708" ph="{&quot;method&quot;: 'POST'...}" />
+                <marker date="1510901611769" expanded="true" signature="550:632" ph="{&quot;Content-Type&quot;: 'application/json'...}" />
+                <marker date="1510901611769" expanded="true" signature="722:782" ph="{...}" />
+                <marker date="1510901611769" expanded="true" signature="808:887" ph="{...}" />
+                <marker date="1510901611769" expanded="true" signature="946:1060" ph="{&quot;method&quot;: 'POST'...}" />
+                <marker date="1510901611769" expanded="true" signature="989:1023" ph="{...}" />
+                <marker date="1510901611769" expanded="true" signature="1074:1108" ph="{...}" />
+                <marker date="1510901611769" expanded="true" signature="1134:1213" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Backend/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1510693616000" expanded="true" signature="842:959" ph="//..." />
+                <marker date="1510693616000" expanded="true" signature="1003:1066" ph="{&quot;origin&quot;: 'http://localhost:3000'...}" />
+                <marker date="1510693616000" expanded="true" signature="1281:1744" ph="{&quot;secret&quot;: &quot;CMPE273_passport&quot;...}" />
+                <marker date="1510693616000" expanded="true" signature="1485:1595" ph="//..." />
+                <marker date="1510693616000" expanded="true" signature="1683:1741" ph="{&quot;url&quot;: mongoSessionURL...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Login.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Frontend/src/components/Login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1505697304000" expanded="true" signature="7:75" ph="..." />
+                <marker date="1505697304000" expanded="true" signature="107:2490" ph="{...}" />
+                <marker date="1505697304000" expanded="true" signature="133:188" ph="{&quot;handleSubmit&quot;: PropTypes.func.isRequired...}" />
+                <marker date="1505697304000" expanded="true" signature="203:253" ph="{&quot;username&quot;: ''...}" />
+                <marker date="1505697304000" expanded="true" signature="280:374" ph="{...}" />
+                <marker date="1505697304000" expanded="true" signature="304:366" ph="{&quot;username&quot;: ''...}" />
+                <marker date="1505697304000" expanded="true" signature="389:2488" ph="{...}" />
+                <marker date="1505697304000" expanded="true" signature="1077:1273" ph="{...}" />
+                <marker date="1505697304000" expanded="true" signature="1129:1237" ph="{&quot;username&quot;: event.target.value...}" />
+                <marker date="1505697304000" expanded="true" signature="1754:1950" ph="{...}" />
+                <marker date="1505697304000" expanded="true" signature="1806:1914" ph="{&quot;password&quot;: event.target.value...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Message.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Frontend/src/components/Message.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="13" column="45" lean-forward="true" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewerHomePage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Frontend/src/components/NewerHomePage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1107">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Welcome.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Frontend/src/components/Welcome.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="35" column="4" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -54,32 +168,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Group Client/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Group Client/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
               <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Group Client/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1510800762335" expanded="true" signature="158:267" ph="{...}" />
+                <marker date="1510800762335" expanded="true" signature="232:264" ph="{...}" />
+                <marker date="1510800762335" expanded="true" signature="269:1221" ph="//..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,6 +204,7 @@
         <option value="$PROJECT_DIR$/Group Client/API/api.js" />
         <option value="$PROJECT_DIR$/Group Client/views/index.ejs" />
         <option value="$PROJECT_DIR$/Frontend/src/api/API.js" />
+        <option value="$PROJECT_DIR$/Frontend/src/components/Welcome.js" />
       </list>
     </option>
   </component>
@@ -172,6 +271,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="User Groups" type="b2602c69:ProjectViewProjectNode" />
+              <item name="User Groups" type="462c0819:PsiDirectoryNode" />
+              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -225,12 +331,12 @@
       <workItem from="1510704497108" duration="60000" />
       <workItem from="1510778414856" duration="7296000" />
       <workItem from="1510874405324" duration="1801000" />
-      <workItem from="1510901580355" duration="32000" />
+      <workItem from="1510901580355" duration="579000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41838000" />
+    <option name="totallyTimeSpent" value="42385000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -294,51 +400,15 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Group Client/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend/routes/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Group Client/API/api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="41" lean-forward="false" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend/routes/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="846">
-          <caret line="47" column="57" lean-forward="false" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Group Client/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Group Client/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-          <folding />
+          <folding>
+            <marker date="1510800762335" expanded="true" signature="158:267" ph="{...}" />
+            <marker date="1510800762335" expanded="true" signature="232:264" ph="{...}" />
+            <marker date="1510800762335" expanded="true" signature="269:1221" ph="//..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -406,7 +476,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-          <folding />
+          <folding>
+            <marker date="1509426444000" expanded="true" signature="443:518" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -414,7 +486,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" column="41" lean-forward="false" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-          <folding />
+          <folding>
+            <marker date="1510801646900" expanded="true" signature="130:166" ph="{&quot;Accept&quot;: 'application/json'...}" />
+            <marker date="1510801646900" expanded="true" signature="234:449" ph="{&quot;method&quot;: 'POST'...}" />
+            <marker date="1510801646900" expanded="true" signature="275:374" ph="{&quot;Accept&quot;: 'application/json'...}" />
+            <marker date="1510801646900" expanded="true" signature="463:489" ph="{...}" />
+            <marker date="1510801646900" expanded="true" signature="513:590" ph="{...}" />
+            <marker date="1510801646900" expanded="true" signature="642:749" ph="{&quot;method&quot;: 'GET'...}" />
+            <marker date="1510801646900" expanded="true" signature="684:742" ph="{&quot;Content-Type&quot;: 'application/json'...}" />
+            <marker date="1510801646900" expanded="true" signature="763:790" ph="{...}" />
+            <marker date="1510801646900" expanded="true" signature="816:887" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -422,7 +504,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-          <folding />
+          <folding>
+            <marker date="1510800762335" expanded="true" signature="158:267" ph="{...}" />
+            <marker date="1510800762335" expanded="true" signature="232:264" ph="{...}" />
+            <marker date="1510800762335" expanded="true" signature="269:1221" ph="//..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -438,7 +524,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1510801530044" expanded="true" signature="304:328" ph="/*...*/" />
+            <marker date="1510801530044" expanded="true" signature="370:422" ph="{...}" />
+            <marker date="1510801530044" expanded="true" signature="465:516" ph="{...}" />
+            <marker date="1510801530044" expanded="true" signature="566:1906" ph="{...}" />
+            <marker date="1510801530044" expanded="true" signature="575:1845" ph="{...}" />
+            <marker date="1510801530044" expanded="true" signature="619:1838" ph="{...}" />
+            <marker date="1510801530044" expanded="true" signature="949:1827" ph="{...}" />
+            <marker date="1510801530044" expanded="true" signature="976:1145" ph="{...}" />
+            <marker date="1510801530044" expanded="true" signature="1019:1126" ph="{&quot;message&quot;: &quot;not inserted&quot;...}" />
+            <marker date="1510801530044" expanded="true" signature="1166:1813" ph="{...}" />
+            <marker date="1510801530044" expanded="true" signature="1286:1798" ph="{...}" />
+            <marker date="1510801530044" expanded="true" signature="1317:1506" ph="{...}" />
+            <marker date="1510801530044" expanded="true" signature="1364:1483" ph="{&quot;message&quot;: &quot;not inserted&quot;...}" />
+            <marker date="1510801530044" expanded="true" signature="1531:1780" ph="{...}" />
+            <marker date="1510801530044" expanded="true" signature="1578:1761" ph="{&quot;req_id&quot;: req.body.req_id...}" />
+            <marker date="1510801530044" expanded="true" signature="1860:1904" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -446,7 +549,84 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="76" lean-forward="false" selection-start-line="0" selection-start-column="76" selection-end-line="0" selection-end-column="76" />
-          <folding />
+          <folding>
+            <marker date="1510901611769" expanded="true" signature="95:131" ph="{&quot;Accept&quot;: 'application/json'...}" />
+            <marker date="1510901611769" expanded="true" signature="206:402" ph="{&quot;method&quot;: 'POST'...}" />
+            <marker date="1510901611769" expanded="true" signature="247:328" ph="{&quot;Content-Type&quot;: 'application/json'...}" />
+            <marker date="1510901611769" expanded="true" signature="416:442" ph="{...}" />
+            <marker date="1510901611769" expanded="true" signature="507:708" ph="{&quot;method&quot;: 'POST'...}" />
+            <marker date="1510901611769" expanded="true" signature="550:632" ph="{&quot;Content-Type&quot;: 'application/json'...}" />
+            <marker date="1510901611769" expanded="true" signature="722:782" ph="{...}" />
+            <marker date="1510901611769" expanded="true" signature="808:887" ph="{...}" />
+            <marker date="1510901611769" expanded="true" signature="946:1060" ph="{&quot;method&quot;: 'POST'...}" />
+            <marker date="1510901611769" expanded="true" signature="989:1023" ph="{...}" />
+            <marker date="1510901611769" expanded="true" signature="1074:1108" ph="{...}" />
+            <marker date="1510901611769" expanded="true" signature="1134:1213" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1510693616000" expanded="true" signature="842:959" ph="//..." />
+            <marker date="1510693616000" expanded="true" signature="1003:1066" ph="{&quot;origin&quot;: 'http://localhost:3000'...}" />
+            <marker date="1510693616000" expanded="true" signature="1281:1744" ph="{&quot;secret&quot;: &quot;CMPE273_passport&quot;...}" />
+            <marker date="1510693616000" expanded="true" signature="1485:1595" ph="//..." />
+            <marker date="1510693616000" expanded="true" signature="1683:1741" ph="{&quot;url&quot;: mongoSessionURL...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/components/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1505697304000" expanded="true" signature="7:75" ph="..." />
+            <marker date="1505697304000" expanded="true" signature="107:2490" ph="{...}" />
+            <marker date="1505697304000" expanded="true" signature="133:188" ph="{&quot;handleSubmit&quot;: PropTypes.func.isRequired...}" />
+            <marker date="1505697304000" expanded="true" signature="203:253" ph="{&quot;username&quot;: ''...}" />
+            <marker date="1505697304000" expanded="true" signature="280:374" ph="{...}" />
+            <marker date="1505697304000" expanded="true" signature="304:366" ph="{&quot;username&quot;: ''...}" />
+            <marker date="1505697304000" expanded="true" signature="389:2488" ph="{...}" />
+            <marker date="1505697304000" expanded="true" signature="1077:1273" ph="{...}" />
+            <marker date="1505697304000" expanded="true" signature="1129:1237" ph="{&quot;username&quot;: event.target.value...}" />
+            <marker date="1505697304000" expanded="true" signature="1754:1950" ph="{...}" />
+            <marker date="1505697304000" expanded="true" signature="1806:1914" ph="{&quot;password&quot;: event.target.value...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/components/Message.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="45" lean-forward="true" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/components/NewerHomePage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1107">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/components/Welcome.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="35" column="4" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
