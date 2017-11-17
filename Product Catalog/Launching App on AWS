@@ -1,0 +1,22 @@
+## Steps to launch an application an AWS:
+
+- Create Application Load Balancer on AWS with the same Security group as that of Mongodb cluster.
+- Create Dockerfile to build Docker image of the application.
+- Create a cluster on ECS with appropriate Key Pair and VPC with any of the two public subnets.
+- Create a Repository with the name <node-app> on AWS Container Service using the Load Balancer created in the Step 1.
+- Retrieve the Docker login command to authenticate Docker client to registry on AWS CLI.
+- Run the Docker login command that was returned in the previous step.
+- Build the Docker image using following command:
+docker build -t node-app .
+- Check if the image is created successfully:
+	docker images 
+- Tag the image in order to push to the repository:
+docker tag node-app:latest 617487773334.dkr.ecr.us-west-1.amazonaws.com/node-app:latest
+- Push the image to the repository on AWS:
+docker push 617487773334.dkr.ecr.us-west-1.amazonaws.com/node-app:latest
+- Run the image on Docker using the following command:
+docker run -d 617487773334.dkr.ecr.us-west-1.amazonaws.com/node-app:latest
+- Verify if the container is up and running on Docker:
+docker ps –a
+- Create Task Definition by adding a container with the image in the repository and host port and container port set to 3000.
+- Finally check the ECS instance and running in EC2 Dashboard and verify by accessing a ping API using Public IP of Container Instance.
