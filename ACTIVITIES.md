@@ -25,6 +25,15 @@ Ashish:-
 - Created API requests from this Frontend to my AWS server to retrieve data and dispay cart information.
 - Created API request from checkout server.
 
+Manogna:-
+- Completed and tested all APIs in Product Catalog module.
+- Deployed the catalog server on AWS using the Docker image of the APIs and connected it to MongoDB replica set.
+- Fixed few bugs in the APIs.
+- Created Class Diagram for the Bon Appetit application.
+- Updated the XP core value- communication.
+- Updated Weekly Meetings.
+
+
 ### Week 7 updates:
 
 Arshiya:-
