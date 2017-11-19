@@ -55,3 +55,13 @@ In last weeks of the project implementation but still the core value-Respect is 
 ### 15. Praise much more frequently than you criticize. Encourage praise and recognition from employee to employee as well as from the supervisor.
 
 ### 16. The golden rule does apply at work, or, as professional speaker Leslie Charles, says, “Implement the platinum rule: treat others as they wish to be treated.””
+
+As in the last week of the project, still respect as a core value is maintained in our project group. Last but not the least, summarising the points that we kept in mind to maintain respect throughout the 8 weeks. 
+
+### 17. We show consideration for one another.
+
+### 18. We recognise each other’s differences.
+
+### 19. We understand the customer’s needs and expectations and go out of our way to meet these.
+
+### 20. We prevent accidents and see that no-one injures themselves in the workplace.
