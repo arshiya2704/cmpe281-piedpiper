@@ -1,8 +1,7 @@
 var MongoClient = require('mongodb').MongoClient;
 var db;
 var connected = false;
-var mongoURL = "mongodb://ip-10-1-2-245.us-west-1.compute.internal,ip-10-1-3-35.us-west-1.compute.internal/bonapetit?replicaSet=example-replica-set"
-
+var mongoURL = "mongodb://mongo:27017/bonappetit";
 
 /**
  * Connects to the MongoDB Database with the provided URL
