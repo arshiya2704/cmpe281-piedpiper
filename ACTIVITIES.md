@@ -1,4 +1,21 @@
 # BonAppétit
+
+### Week 8 updates:
+Nikita:-
+- Tested my API calls with postma to check whether they were running fine or not.
+- Created docker image of my application ans tested whether it works fine or not.
+- Fixed the necessary bugs that I encountered while building docker image, hence had to modify the dependencies that were being included 
+  in as it was not compatible with the version of node in docker .
+- Took the steps neccesary to host my application in AWS using ECS with help of cluster and ELB.
+- Updated the XP core value- courage .
+
+Ashish:-
+- Tested all APIs for various test cases and fixed sone bugs.
+- Updated XP core value - Feedback.
+- Created initial front end part with NodeJS and AWS.
+- Created API requests from this Frontend to my AWS server to retrieve data and dispay cart information.
+- Created API request from checkout server.
+
 ### Week 7 updates:
 
 Arshiya:-
