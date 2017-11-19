@@ -1,6 +1,15 @@
 # BonAppétit
 
 ### Week 8 updates:
+
+Arshiya:-
+- Tested the APIs for all the cross server as well as frontend calls.
+- Changed UI to reactjs due to unstability of ejs.
+- Deployed node cluster onto AWS.
+- Updated final CFD.
+- Updated final Burntdown chart.
+- Updated XP core value - Respect.
+
 Jigar:-
 - Tested APIs wchich includes cross server calls
 - Fixed some bugs in backend
