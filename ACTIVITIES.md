@@ -1,4 +1,48 @@
 # BonAppétit
+
+### Week 8 updates:
+
+Arshiya:-
+- Tested the APIs for all the cross server as well as frontend calls.
+- Changed UI to reactjs due to unstability of ejs.
+- Deployed node cluster onto AWS.
+- Updated final CFD.
+- Updated final Burntdown chart.
+- Updated XP core value - Respect.
+
+Jigar:-
+- Tested APIs wchich includes cross server calls
+- Fixed some bugs in backend
+- Added more functionalities in frontend server
+- Bug fixes in frontend
+- Updated docker image for backend APIs
+- Created API request for group orders
+- Updated XP core value - Simplicity
+
+Nikita:-
+- Tested my API calls with postman to check whether they were running fine or not.
+- Created docker image of my application ans tested whether it works fine or not.
+- Fixed the necessary bugs that I encountered while building docker image, hence had to modify the dependencies that were being included 
+  in as it was not compatible with the version of node in docker .
+- Took the steps neccesary to host my application in AWS using ECS with help of cluster and ELB.
+- Updated the XP core value- courage .
+
+Ashish:-
+- Tested all APIs for various test cases and fixed some bugs.
+- Updated XP core value - Feedback.
+- Created initial front end part with NodeJS and AWS.
+- Created API requests from this Frontend to my AWS server to retrieve data and dispay cart information.
+- Created API request from checkout server.
+
+Manogna:-
+- Completed and tested all APIs in Product Catalog module.
+- Deployed the catalog server on AWS using the Docker image of the APIs and connected it to MongoDB replica set.
+- Fixed few bugs in the APIs.
+- Created Class Diagram for the Bon Appetit application.
+- Updated the XP core value- communication.
+- Updated Weekly Meetings.
+
+
 ### Week 7 updates:
 
 Arshiya:-

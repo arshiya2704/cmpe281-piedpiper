@@ -1,4 +1,13 @@
 This page is about Weekly Meetings.
+# Week - 8:
+## This week's Progress:
+## 11-18-2017
+* Team has met twice this week to discuss the deployement of APIs of each module in AWS.
+* Each of the team members has built the API images on Docker and pushed them into AWS ECS repository.
+* The container instances are then deployed in AWS in which the instances are made to run on load balancer in the security group already configured for Mongo replica set.
+* Unit Testing of all the individual APIs on localhost and on AWS is completed.
+* Currently working on the Integration of UIs of each module and integration testing.
+
 # Week - 7:
 ## This week's Progress:
 ## 11-11-2017
