@@ -8,6 +8,7 @@ Jigar:-
 - Bug fixes in frontend
 - Updated docker image for backend APIs
 - Created API request for group orders
+- Updated XP core value - Simplicity
 
 Nikita:-
 - Tested my API calls with postman to check whether they were running fine or not.
