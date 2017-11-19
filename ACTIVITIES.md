@@ -1,4 +1,14 @@
 # BonAppétit
+
+### Week 8 updates:
+
+Ashish:-
+- Tested all APIs for various test cases and fixed sone bugs.
+- Updated XP core value - Feedback.
+- Created initial front end part with NodeJS and AWS.
+- Created API requests from this Frontend to my AWS server to retrieve data and dispay cart information.
+- Created API request from checkout server.
+
 ### Week 7 updates:
 
 Arshiya:-
