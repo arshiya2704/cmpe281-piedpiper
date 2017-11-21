@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import * as API from './api/API';
+import  GridList from './Components/GridList'
+import 'react-notifications/lib/notifications.css';
+import {NotificationContainer, NotificationManager} from 'react-notifications';
 
-import Select from 'react-select';
 
 class App extends Component {
 
@@ -12,9 +13,11 @@ class App extends Component {
         this.state = {
             cardNum:'',
             cardName:'',
-            expM:'1',
-            expY:'2017'
+            expM:'',
+            expY:'',
+            cards:[]
         };
+        this.init();
 
     }
 
@@ -36,15 +39,34 @@ class App extends Component {
         payload.expM=this.state.expM;
         payload.expY=this.state.expY;
         API.save(payload).then((res) => {
+            console.log(res);
             if (res.status === 200) {
                 console.log("saved");
+                NotificationManager.success('', res.message , 1500);
+                API.getCards().then((res) => {
+                    console.log(res);
+                    this.setState({
+                        cards: res
+                    });
+                });
             }
             else{
                 console.log("not saved");
+                NotificationManager.error('', res.message , 1500);
             }
         });
 
     };
+
+    init() {
+        API.getCards().then((res) => {
+            console.log(res);
+            this.setState({
+               cards: res
+            });
+        });
+    }
+
 
     handleChange (propertyName, event) {
         const val = this.state;
@@ -127,7 +149,15 @@ class App extends Component {
                         </div>
                     </div>
                 </div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <div className="col-lg-7 col-md-7 col-sm-7">
+                <GridList cards={this.state.cards}/>
+                </div>
             </div>
+            <NotificationContainer/>
         </div>
     );
   }

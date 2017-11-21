@@ -16,10 +16,9 @@ var request     = require('request');
 
 
 
-
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+    res.send('respond with a resource');
 });
 
 router.post('/api/save', function (req, res) {
@@ -28,48 +27,69 @@ router.post('/api/save', function (req, res) {
     var cardNum = req.body.cardNum;
     var cardName = req.body.cardName;
     var cardType = req.body.cardType;
-    var expDate = req.body.expDate;
+    var expM = req.body.expM;
+    var expY = req.body.expY;
+    var expDate = expM + "/" + expY;
+    console.log(expDate);
     var newCard = mongoose.CardData();
     newCard.cardNum = cardNum;
     newCard.cardName = cardName;
     newCard.cardType = cardType;
     newCard.expDate = expDate;
-    newCard.save(function (err, savedUser) {
-        if(err)
-        {
-            console.log(err);
-            return res.status(500).send();
-        }
-        return res.status(200).send({message:"Card saved successfully!!"})
-    });
+    if(cardNum && cardName && cardType && expM && expY){
+        newCard.save(function (err, savedUser) {
+            if(err)
+            {
+                console.log(err);
+                return res.status(502).send({message:"Card already exists!!"});
+            }
+            else
+            return res.send({status:200, message:"Card saved successfully!!"})
+        });
+    }
+    else
+        return res.status(500).send({message:"Enter card number properly!!"})
 });
 
+router.get('/api/get', function (req, res) {
+    console.log('get is being called');
+    mongoose.CardData.find({}, function (err,user,info) {
+        if(err){
+            console.log(err);
+        }
+        else{
+            console.log(user);
+            return res.status(200).send(user);
+        }
+    })
+
+});
 
 router.post('/api/checkout', function (req, res) {
     console.log('checkout is being called');
     console.log(req.body);
-   //  var userId= req.body.userId;
-   //  var qty = req.body.qty;
-   //  var itemId= req.body.itemId;
-   //  var total = req.body.total;
-   //  // send.deduct({qty:,});
-   //
-   //  //var data= {arr : req.body};
-   //  var resArr=[];
-   //  for(i=2;i< ((req.body).length);i++){
-   //      var data=[];
-   //      data[i] = querystring.stringify({
-   //          qty: req.body[i].qty,
-   //          itemId :req.body[i].itemId
-   //      });
-   //      // data.qty =req.body[i].qty;
-   //      // data.itemId = req.body[i].itemId;
-   //      resArr.push(data[i]);
-   //  }
-   //  console.log("resArr is");
-   //  console.log(resArr);
-   //  var dataSend = resArr.toString();
-   // console.log("datasend:"+dataSend);
+    //  var userId= req.body.userId;
+    //  var qty = req.body.qty;
+    //  var itemId= req.body.itemId;
+    //  var total = req.body.total;
+    //  // send.deduct({qty:,});
+    //
+    //  //var data= {arr : req.body};
+    //  var resArr=[];
+    //  for(i=2;i< ((req.body).length);i++){
+    //      var data=[];
+    //      data[i] = querystring.stringify({
+    //          qty: req.body[i].qty,
+    //          itemId :req.body[i].itemId
+    //      });
+    //      // data.qty =req.body[i].qty;
+    //      // data.itemId = req.body[i].itemId;
+    //      resArr.push(data[i]);
+    //  }
+    //  console.log("resArr is");
+    //  console.log(resArr);
+    //  var dataSend = resArr.toString();
+    // console.log("datasend:"+dataSend);
 
     // data= {data:req.body};
     // //dataType: 'json',
